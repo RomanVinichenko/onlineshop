@@ -1,11 +1,14 @@
-import React, {FC} from 'react';
+import React, { FC, useState } from 'react';
 
 import Header from '../Header';
 import Products from '../Products';
+import Modal from '../Modal';
+import ModalBuy from '../ModalBuy';
 
 import styles from './style.module.scss';
 
 const Main: FC = () => {
+  let [openPayModal, setOpenPayModal] = useState<boolean>(false);
   return (
     <>
       <Header/>
@@ -62,11 +65,11 @@ const Main: FC = () => {
               </button>
             </div>
             <div>
-            <img
-              className={styles['main__pic']}
-              src={process.env.PUBLIC_URL + '/assets/images/2.31.jpg'}
-              alt="top image"
-            />
+              <img
+                className={styles['main__pic']}
+                src={process.env.PUBLIC_URL + '/assets/images/2.31.jpg'}
+                alt="top image"
+              />
               <div className={styles['main__square']}></div>
             </div>
           </div>
@@ -74,6 +77,11 @@ const Main: FC = () => {
       </section>
 
       <Products/>
+      {openPayModal && (
+        <Modal callBack={() => setOpenPayModal(false)}>
+          <ModalBuy />
+        </Modal>
+      )}
     </>
   );
 };
