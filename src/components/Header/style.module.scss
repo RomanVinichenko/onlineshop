@@ -7,9 +7,18 @@
     padding: 20px 0;
     background-color: #fff;
 
+    &__img {
+        margin-right: 12px;
+    }
+
+    &__title {
+        margin-right: auto;
+    }
+
     .menu {
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
         &__list {
             display: flex;
