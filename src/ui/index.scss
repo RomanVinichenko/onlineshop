@@ -1,6 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
 @import "reset";
 
+$xl: 1200;
+$lg: 992;
+$md: 768;
+$sm: 576;
+
+@mixin r($width) {
+    @media only screen and (max-width: $width + "px") {
+        @content;
+    }
+}
+
 body {
     font-family: "Rubik", sans-serif;
     font-weight: 400;
