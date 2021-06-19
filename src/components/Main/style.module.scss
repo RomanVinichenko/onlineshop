@@ -1,23 +1,26 @@
+@import "../../ui/mixins";
+@import "../../ui/variables";
+
 .main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 70px;
-    min-height: calc(100vh - 93px);
-    background-color: #f5f1f1;
+    padding: 115px 0;
 
     &__inner {
-      display: flex;
-
-      //@include r($lg) {
-      //  display: none;
-      //}
+        display: flex;
     }
 
     &__description {
         margin-right: 25px;
-        width: 650px;
+        width: 100%;
+        max-width: 650px;
+
+        @include r($md) {
+            margin-right: 0;
+        }
     }
 
     &__title {
@@ -27,6 +30,14 @@
 
         span {
             color: rgb(186, 69, 100);
+        }
+
+        @include r($md) {
+            font-size: 30px;
+        }
+
+        @include r($sm) {
+            font-size: 26px;
         }
     }
 
@@ -51,9 +62,16 @@
         margin-bottom: 10px;
     }
 
+    &__list-text {
+        @include r($sm) {
+            font-size: 14px;
+        }
+    }
+
     &__btn {
         padding: 20px 50px;
-        width: 350px;
+        width: 100%;
+        max-width: 350px;
         border: none;
         border-radius: 30px;
         box-shadow: 0 10px 25px 0 rgb(216, 124, 152);
@@ -64,6 +82,67 @@
 
         &:hover {
             box-shadow: none;
+        }
+
+        @include r($sm) {
+            padding: 15px 10px;
+        }
+    }
+
+    &__pic {
+        @include r($md) {
+            display: none;
+        }
+    }
+
+    @include r($sm) {
+        padding: 50px 0;
+    }
+}
+
+.about {
+    padding: 50px 0;
+    background-color: #fff;
+
+    &__title {
+        margin-bottom: 20px;
+        font-size: 38px;
+        text-align: center;
+
+        @include r($md) {
+            font-size: 30px;
+        }
+
+        @include r($sm) {
+            font-size: 26px;
+        }
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    &__item {
+        margin-bottom: 30px;
+        padding: 20px 30px;
+        width: 100%;
+        max-width: 470px;
+        border: 2px solid #7a2041;
+        border-radius: 5px;
+        background-color: #fff5f6;
+
+        @include r($md) {
+            padding: 10px 15px;
+        }
+    }
+
+    &__text {
+        font-size: 22px;
+
+        @include r($md) {
+            font-size: 16px;
         }
     }
 }

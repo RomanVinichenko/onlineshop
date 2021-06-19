@@ -1,17 +1,15 @@
+@import "../ui/mixins";
+@import "../ui/variables";
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
 @import "reset";
 @import "input-phone";
-
-$xl: 1200;
-$lg: 992;
-$md: 768;
-$sm: 576;
 
 body {
     font-family: "Rubik", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.3;
+    background-color: #fff5f6;
 }
 
 .container {
@@ -81,8 +79,9 @@ body {
         background-color: rgb(122, 32, 65);
         transition: box-shadow 0.5s;
 
-        &:hover {
-            box-shadow: none;
+        @include r($md) {
+            padding: 6px 12px;
+            font-size: 14px;
         }
     }
 
@@ -90,23 +89,27 @@ body {
         padding: 10px 20px;
         border: 1px solid #7a2041;
         border-radius: 35px;
-        box-shadow: 0 5px 5px 0 rgb(216, 124, 152);
         color: #7a2041;
         background-color: #fff;
         transition: box-shadow 0.5s;
 
-        &:hover {
-            box-shadow: none;
+        @include r($md) {
+            padding: 6px 12px;
+            font-size: 14px;
         }
     }
 
     &:hover {
         box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
     }
-}
 
-.btn {
+    @include r($md) {
+        max-width: 240px;
+    }
 
+    @include r($sm) {
+        max-width: 212px;
+    }
 }
 
 .phone {

@@ -1,17 +1,31 @@
+@import "../../ui/mixins";
+@import "../../ui/variables";
+
 .products {
     padding: 50px 0;
-    background-color: #fff5f6;
 
     &__list {
         display: flex;
         justify-content: center;
         margin-bottom: 20px;
+
+        @include r($sm) {
+            flex-wrap: wrap;
+        }
     }
 
     &__title {
         margin-bottom: 20px;
         font-size: 38px;
         text-align: center;
+
+        @include r($md) {
+            font-size: 30px;
+        }
+
+        @include r($sm) {
+            font-size: 26px;
+        }
     }
 
     &__item {
@@ -35,11 +49,17 @@
             color: #fff;
             background-color: #7a2041;
         }
+
+        @include r($sm) {
+            margin-bottom: 10px;
+            padding: 6px 8px;
+        }
     }
 
     &__inner {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         margin: 0 auto;
         text-align: center;
     }
