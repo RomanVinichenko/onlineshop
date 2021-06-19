@@ -85,27 +85,27 @@ const Main: FC = () => {
 
       <section className={styles['about']}>
         <div className={styles['container']}>
-        <div className={styles['about__inner']}>
-          <h2 className={styles['about__title']}>
+          <div className={styles['about__inner']}>
+            <h2 className={styles['about__title']}>
               О доставке
-          </h2>
-          <ul className={'about__items'}>
-            <li className={'about__item'}>
-              Мы доставляем товары с нашего магазина по всей территории Украины
-            </li>
-            <li className={'about__item'}>
-              Доставка по Новой Почте от 1-го до 3-ех дней
-            </li>
-            <li className={'about__item'}>
-             Отправляем наложенным платежом
-            </li>
-            <li className={'about__item'}>
-              Мы доставляем товары с нашего магазина по всей территории Украины
-            </li>
-          </ul>
+            </h2>
+            <ul className={'about__items'}>
+              <li className={'about__item'}>
+                Мы доставляем товары с нашего магазина по всей территории Украины
+              </li>
+              <li className={'about__item'}>
+                Доставка по Новой Почте от 1-го до 3-ех дней
+              </li>
+              <li className={'about__item'}>
+                Отправляем наложенным платежом
+              </li>
+              <li className={'about__item'}>
+                Мы доставляем товары с нашего магазина по всей территории Украины
+              </li>
+            </ul>
 
 
-        </div>
+          </div>
         </div>
       </section>
     </>
