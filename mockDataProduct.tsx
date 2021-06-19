@@ -5,7 +5,7 @@ type MockDataProductType = {
     id: string;
     img: string;
     title: string;
-    type: string
+    type: string;
     description: DescriptionType;
     price: string;
     sale: string;
