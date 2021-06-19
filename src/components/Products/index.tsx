@@ -1,9 +1,10 @@
 import React, { FC, useState } from 'react';
 
-import mockData, { MockDataProductType } from '../../mockDataProduct';
+import mockData from '../../mockDataProduct';
 
 import styles from './style.module.scss';
 import Modal from '../Modal';
+import ModalBuy from '../ModalBuy';
 
 type ModalContentType = {
     img: string;
@@ -16,6 +17,7 @@ const Products: FC = () => {
     let [modalContent, setModalContent] = useState<ModalContentType | null>(null);
     let [productList, setProductList] = useState(mockData);
     let [filter, setFilter] = useState<'all' | 'towel' | 'linens'>('all');
+    let [openPayModal, setOpenPayModal] = useState<boolean>(false);
 
     let copyProductList = productList;
 
@@ -91,7 +93,11 @@ const Products: FC = () => {
                                             }>
                                             Подробнее
                                         </button>
-                                        <button className={'card__btn-buy'}>Купить</button>
+                                        <button
+                                            className={'card__btn-buy'}
+                                            onClick={() => setOpenPayModal(true)}>
+                                            Купить
+                                        </button>
                                     </div>
                                 </article>
                             );
@@ -117,6 +123,11 @@ const Products: FC = () => {
                         <button className={styles['modal-product__btn']}>Заказать</button>
                         <p className={styles['modal-product__size']}>{modalContent?.size}</p>
                     </div>
+                </Modal>
+            )}
+            {openPayModal && (
+                <Modal callBack={() => setOpenPayModal(false)}>
+                    <ModalBuy />
                 </Modal>
             )}
         </>
