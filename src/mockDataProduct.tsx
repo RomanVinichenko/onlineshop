@@ -1,6 +1,6 @@
 import { v1 } from 'uuid';
 
-type MockDataProductType = {
+export type MockDataProductType = {
     id: string;
     img: string;
     title: string;
@@ -29,7 +29,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '1.1.jpg',
         title: '',
-        type: 'Полотенце №1',
+        type: 'towel',
         description: {
             belong: 'Дом',
             structure: '100% Хлопок (махра, плотность: 400 г/м2)',
@@ -50,7 +50,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '1.2.jpg',
         title: '',
-        type: 'Полотенце №2',
+        type: 'towel',
         description: {
             belong: 'Дом',
             structure: '100% Хлопок (махра, плотность: 400 г/м2)',
@@ -71,7 +71,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '1.3.jpg',
         title: '',
-        type: 'Полотенце №3',
+        type: 'towel',
         description: {
             belong: 'Дом',
             structure: '100% Хлопок (махра, плотность: 400 г/м2)',
@@ -92,7 +92,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '1.4.jpg',
         title: '',
-        type: 'Полотенце №4',
+        type: 'towel',
         description: {
             belong: 'Дом',
             structure: '100% Хлопок (махра, плотность: 400 г/м2)',
@@ -113,7 +113,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '1.5.jpg',
         title: '',
-        type: 'Полотенце №5',
+        type: 'towel',
         description: {
             belong: 'Дом',
             structure: '100% Хлопок (махра, плотность: 400 г/м2)',
@@ -134,7 +134,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '1.6.jpg',
         title: '',
-        type: 'Полотенце №6',
+        type: 'towel',
         description: {
             belong: 'Дом',
             structure: '100% Хлопок (махра, плотность: 400 г/м2)',
@@ -155,7 +155,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '1.7.jpg',
         title: '',
-        type: 'Полотенце №7',
+        type: 'towel',
         description: {
             belong: 'Дом',
             structure: '100% Хлопок (махра, плотность: 400 г/м2)',
@@ -176,7 +176,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '1.8.jpg',
         title: '',
-        type: 'Полотенце №8',
+        type: 'towel',
         description: {
             belong: 'Дом',
             structure: '100% Хлопок (махра, плотность: 400 г/м2)',
@@ -197,7 +197,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '1.9.jpg',
         title: '',
-        type: 'Полотенце №9',
+        type: 'towel',
         description: {
             belong: 'Дом',
             structure: '100% Хлопок (махра, плотность: 400 г/м2)',
@@ -218,7 +218,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '1.10.jpg',
         title: '',
-        type: 'Полотенце №10',
+        type: 'towel',
         description: {
             belong: 'Дом',
             structure: '100% Хлопок (махра, плотность: 400 г/м2)',
@@ -239,7 +239,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '1.11.jpg',
         title: '',
-        type: 'Полотенце №11',
+        type: 'towel',
         description: {
             belong: 'Дом',
             structure: '100% Хлопок (махра, плотность: 400 г/м2)',
@@ -260,7 +260,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '1.12.jpg',
         title: '',
-        type: 'Полотенце №12',
+        type: 'towel',
         description: {
             belong: 'Дом',
             structure: '100% Хлопок (махра, плотность: 400 г/м2)',
@@ -281,7 +281,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '1.13.jpg',
         title: '',
-        type: 'Полотенце №13',
+        type: 'towel',
         description: {
             belong: 'Дом',
             structure: '100% Хлопок (махра, плотность: 400 г/м2)',
@@ -302,7 +302,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '1.14.jpg',
         title: '',
-        type: 'Полотенце №14',
+        type: 'towel',
         description: {
             belong: 'Дом',
             structure: '100% Хлопок (махра, плотность: 400 г/м2)',
@@ -323,7 +323,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '1.15.jpg',
         title: '',
-        type: 'Полотенце №15',
+        type: 'towel',
         description: {
             belong: 'Дом',
             structure: '100% Хлопок (махра, плотность: 400 г/м2)',
@@ -344,7 +344,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '1.16.jpg',
         title: '',
-        type: 'Полотенце №16',
+        type: 'towel',
         description: {
             belong: 'Дом',
             structure: '100% Хлопок (махра, плотность: 400 г/м2)',
@@ -365,7 +365,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '1.17.jpg',
         title: '',
-        type: 'Полотенце №17',
+        type: 'towel',
         description: {
             belong: 'Дом',
             structure: '100% Хлопок (махра, плотность: 400 г/м2)',
@@ -386,7 +386,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '1.18.jpg',
         title: '',
-        type: 'Полотенце №18',
+        type: 'towel',
         description: {
             belong: 'Дом',
             structure: '100% Хлопок (махра, плотность: 400 г/м2)',
@@ -407,7 +407,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '1.19.jpg',
         title: '',
-        type: 'Полотенце №19',
+        type: 'towel',
         description: {
             belong: 'Дом',
             structure: '100% Хлопок (махра, плотность: 400 г/м2)',
@@ -428,7 +428,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '1.20.jpg',
         title: '',
-        type: 'Полотенце №20',
+        type: 'towel',
         description: {
             belong: 'Дом',
             structure: '100% Хлопок (махра, плотность: 400 г/м2)',
@@ -449,7 +449,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '1.21.jpg',
         title: '',
-        type: 'Полотенце №21',
+        type: 'towel',
         description: {
             belong: 'Дом',
             structure: '100% Хлопок (махра, плотность: 400 г/м2)',
@@ -470,7 +470,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '1.22.jpg',
         title: '',
-        type: 'Полотенце №22',
+        type: 'towel',
         description: {
             belong: 'Дом',
             structure: '100% Хлопок (махра, плотность: 400 г/м2)',
@@ -491,7 +491,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '1.23.jpg',
         title: '',
-        type: 'Полотенце №23',
+        type: 'towel',
         description: {
             belong: 'Дом',
             structure: '100% Хлопок (махра, плотность: 400 г/м2)',
@@ -512,7 +512,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '1.24.jpg',
         title: '',
-        type: 'Полотенце №24',
+        type: 'towel',
         description: {
             belong: 'Дом',
             structure: '100% Хлопок (махра, плотность: 400 г/м2)',
@@ -533,7 +533,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '1.25.jpg',
         title: '',
-        type: 'Полотенце №25',
+        type: 'towel',
         description: {
             belong: 'Дом',
             structure: '100% Хлопок',
@@ -554,7 +554,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.1.jpg',
         title: '',
-        type: 'Белье №1',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -594,7 +594,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.2.jpg',
         title: '',
-        type: 'Белье №2',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -634,7 +634,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.3.jpg',
         title: '',
-        type: 'Белье №3',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -674,7 +674,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.4.jpg',
         title: '',
-        type: 'Белье №4',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -714,7 +714,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.5.jpg',
         title: '',
-        type: 'Белье №5',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -754,7 +754,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.6.jpg',
         title: '',
-        type: 'Белье №6',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -794,7 +794,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.7.jpg',
         title: '',
-        type: 'Белье №7',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -834,7 +834,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.8.jpg',
         title: '',
-        type: 'Белье №8',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -874,7 +874,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.9.jpg',
         title: '',
-        type: 'Белье №9',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -914,7 +914,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.10.jpg',
         title: '',
-        type: 'Белье №10',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -954,7 +954,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.11.jpg',
         title: '',
-        type: 'Белье №11',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -994,7 +994,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.12.jpg',
         title: '',
-        type: 'Белье №12',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -1034,7 +1034,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.13.jpg',
         title: '',
-        type: 'Белье №13',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -1074,7 +1074,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.14.jpg',
         title: '',
-        type: 'Белье №14',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -1114,7 +1114,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.15.jpg',
         title: '',
-        type: 'Белье №15',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -1154,7 +1154,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.16.jpg',
         title: '',
-        type: 'Белье №16',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -1194,7 +1194,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.17.jpg',
         title: '',
-        type: 'Белье №17',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -1234,7 +1234,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.18.jpg',
         title: '',
-        type: 'Белье №18',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -1274,7 +1274,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.19.jpg',
         title: '',
-        type: 'Белье №19',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -1314,7 +1314,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.20.jpg',
         title: '',
-        type: 'Белье №20',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -1354,7 +1354,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.21.jpg',
         title: '',
-        type: 'Белье №21',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -1394,7 +1394,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.22.jpg',
         title: '',
-        type: 'Белье №22',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -1434,7 +1434,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.23.jpg',
         title: '',
-        type: 'Белье №23',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -1474,7 +1474,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.24.jpg',
         title: '',
-        type: 'Белье №24',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -1514,7 +1514,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.25.jpg',
         title: '',
-        type: 'Белье №25',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -1554,7 +1554,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.26.jpg',
         title: '',
-        type: 'Белье №26',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -1594,7 +1594,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.27.jpg',
         title: '',
-        type: 'Белье №27',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -1634,7 +1634,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.28.jpg',
         title: '',
-        type: 'Белье №28',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -1674,7 +1674,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.29.jpg',
         title: '',
-        type: 'Белье №29',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -1714,7 +1714,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.30.jpg',
         title: '',
-        type: 'Белье №30',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -1754,7 +1754,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.31.jpg',
         title: '',
-        type: 'Белье №31',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -1794,7 +1794,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.32.jpg',
         title: '',
-        type: 'Белье №32',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -1834,7 +1834,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.33.jpg',
         title: '',
-        type: 'Белье №33',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -1874,7 +1874,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.34.jpg',
         title: '',
-        type: 'Белье №34',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -1914,7 +1914,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.35.jpg',
         title: '',
-        type: 'Белье №35',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -1954,7 +1954,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.36.jpg',
         title: '',
-        type: 'Белье №36',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -1994,7 +1994,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.37.jpg',
         title: '',
-        type: 'Белье №37',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -2034,7 +2034,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.38.jpg',
         title: '',
-        type: 'Белье №38',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -2074,7 +2074,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.39.jpg',
         title: '',
-        type: 'Белье №39',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -2114,7 +2114,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.40.jpg',
         title: '',
-        type: 'Белье №40',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -2154,7 +2154,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.41.jpg',
         title: '',
-        type: 'Белье №41',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -2194,7 +2194,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.42.jpg',
         title: '',
-        type: 'Белье №42',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -2234,7 +2234,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.43.jpg',
         title: '',
-        type: 'Белье №43',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -2274,7 +2274,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.44.jpg',
         title: '',
-        type: 'Белье №44',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -2314,7 +2314,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.45.jpg',
         title: '',
-        type: 'Белье №45',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -2354,7 +2354,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.46.jpg',
         title: '',
-        type: 'Белье №46',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -2394,7 +2394,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.47.jpg',
         title: '',
-        type: 'Белье №47',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -2434,7 +2434,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.48.jpg',
         title: '',
-        type: 'Белье №48',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -2474,7 +2474,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.49.jpg',
         title: '',
-        type: 'Белье №49',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -2514,7 +2514,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.50.jpg',
         title: '',
-        type: 'Белье №50',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -2554,7 +2554,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.51.jpg',
         title: '',
-        type: 'Белье №51',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -2594,7 +2594,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.52.jpg',
         title: '',
-        type: 'Белье №52',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -2634,7 +2634,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.53.jpg',
         title: '',
-        type: 'Белье №53',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -2674,7 +2674,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.54.jpg',
         title: '',
-        type: 'Белье №54',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -2714,7 +2714,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.55.jpg',
         title: '',
-        type: 'Белье №55',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -2754,7 +2754,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.56.jpg',
         title: '',
-        type: 'Белье №56',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -2794,7 +2794,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.57.jpg',
         title: '',
-        type: 'Белье №57',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -2834,7 +2834,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.58.jpg',
         title: '',
-        type: 'Белье №58',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -2874,7 +2874,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.59.jpg',
         title: '',
-        type: 'Белье №59',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -2914,7 +2914,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.60.jpg',
         title: '',
-        type: 'Белье №60',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -2954,7 +2954,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.61.jpg',
         title: '',
-        type: 'Белье №61',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -2994,7 +2994,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.62.jpg',
         title: '',
-        type: 'Белье №62',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -3034,7 +3034,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.63.jpg',
         title: '',
-        type: 'Белье №63',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -3074,7 +3074,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.64.jpg',
         title: '',
-        type: 'Белье №64',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -3114,7 +3114,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.65.jpg',
         title: '',
-        type: 'Белье №65',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -3154,7 +3154,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.66.jpg',
         title: '',
-        type: 'Белье №66',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -3194,7 +3194,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.67.jpg',
         title: '',
-        type: 'Белье №67',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -3234,7 +3234,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.68.jpg',
         title: '',
-        type: 'Белье №68',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -3274,7 +3274,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.69.jpg',
         title: '',
-        type: 'Белье №69',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -3314,7 +3314,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.70.jpg',
         title: '',
-        type: 'Белье №70',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -3354,7 +3354,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.71.jpg',
         title: '',
-        type: 'Белье №71',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -3394,7 +3394,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.72.jpg',
         title: '',
-        type: 'Белье №72',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -3434,7 +3434,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.73.jpg',
         title: '',
-        type: 'Белье №73',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -3474,7 +3474,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.74.jpg',
         title: '',
-        type: 'Белье №74',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -3514,7 +3514,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.75.jpg',
         title: '',
-        type: 'Белье №75',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
@@ -3554,7 +3554,7 @@ let mockDataProduct: MockDataProductType[] = [
         id: v1(),
         img: '2.76.jpg',
         title: '',
-        type: 'Белье №76',
+        type: 'linens',
         description: {
             belong: 'Дом',
             structure: 'Хлопок, полиэстер',
