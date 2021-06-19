@@ -79,9 +79,17 @@ body {
         background-color: rgb(122, 32, 65);
         transition: box-shadow 0.5s;
 
+        &:hover {
+            box-shadow: none;
+        }
+
         @include r($md) {
             padding: 6px 12px;
             font-size: 14px;
+        }
+
+        @include r($sm) {
+            padding: 10px 20px;
         }
     }
 
@@ -97,6 +105,10 @@ body {
             padding: 6px 12px;
             font-size: 14px;
         }
+
+        @include r($sm) {
+            padding: 10px 15px;
+        }
     }
 
     &:hover {
@@ -108,7 +120,7 @@ body {
     }
 
     @include r($sm) {
-        max-width: 212px;
+        max-width: 324px;
     }
 }
 

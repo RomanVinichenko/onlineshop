@@ -70,16 +70,14 @@
         padding: 20px 50px;
     }
 
-    &__text {
-        margin-bottom: 20px;
-    }
-
     &__price {
         margin-bottom: 20px;
+        font-size: 18px;
     }
 
     &__price-main {
         display: block;
+        margin-bottom: 15px;
 
         span {
             text-decoration: line-through;
@@ -94,12 +92,7 @@
         padding: 10px 20px;
         border: 1px solid #7a2041;
         border-radius: 35px;
-        box-shadow: 0 5px 5px 0 rgb(216, 124, 152);
         background-color: #fff;
         transition: box-shadow 0.5s;
-
-        &:hover {
-            box-shadow: none;
-        }
     }
 }
