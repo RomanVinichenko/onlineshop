@@ -833,7 +833,7 @@ export let mockDataProduct: MockDataProductType[] = [
     },
     {
         id: v1(),
-        img: '33.jpg',
+        img: '2.8.jpg',
         title: '',
         type: 'Белье №8',
         description: {
@@ -870,9 +870,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '34.jpg',
+        img: '2.9.jpg',
         title: '',
         type: 'Белье №9',
         description: {
@@ -909,9 +910,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '35.jpg',
+        img: '2.10.jpg',
         title: '',
         type: 'Белье №10',
         description: {
@@ -948,9 +950,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '36.jpg',
+        img: '2.11.jpg',
         title: '',
         type: 'Белье №11',
         description: {
@@ -987,9 +990,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '37.jpg',
+        img: '2.12.jpg',
         title: '',
         type: 'Белье №12',
         description: {
@@ -1026,9 +1030,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '38.jpg',
+        img: '2.13.jpg',
         title: '',
         type: 'Белье №13',
         description: {
@@ -1065,9 +1070,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '39.jpg',
+        img: '2.14.jpg',
         title: '',
         type: 'Белье №14',
         description: {
@@ -1104,9 +1110,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '40.jpg',
+        img: '2.15.jpg',
         title: '',
         type: 'Белье №15',
         description: {
@@ -1143,9 +1150,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '41.jpg',
+        img: '2.16.jpg',
         title: '',
         type: 'Белье №16',
         description: {
@@ -1182,9 +1190,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '42.jpg',
+        img: '2.17.jpg',
         title: '',
         type: 'Белье №17',
         description: {
@@ -1221,9 +1230,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '43.jpg',
+        img: '2.18.jpg',
         title: '',
         type: 'Белье №18',
         description: {
@@ -1260,9 +1270,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '44.jpg',
+        img: '2.19.jpg',
         title: '',
         type: 'Белье №19',
         description: {
@@ -1299,9 +1310,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '45.jpg',
+        img: '2.20.jpg',
         title: '',
         type: 'Белье №20',
         description: {
@@ -1338,9 +1350,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '46.jpg',
+        img: '2.21.jpg',
         title: '',
         type: 'Белье №21',
         description: {
@@ -1377,9 +1390,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '47.jpg',
+        img: '2.22.jpg',
         title: '',
         type: 'Белье №22',
         description: {
@@ -1416,9 +1430,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '48.jpg',
+        img: '2.23.jpg',
         title: '',
         type: 'Белье №23',
         description: {
@@ -1455,9 +1470,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '49.jpg',
+        img: '2.24.jpg',
         title: '',
         type: 'Белье №24',
         description: {
@@ -1494,9 +1510,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '50.jpg',
+        img: '2.25.jpg',
         title: '',
         type: 'Белье №25',
         description: {
@@ -1533,9 +1550,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '51.jpg',
+        img: '2.26.jpg',
         title: '',
         type: 'Белье №26',
         description: {
@@ -1572,9 +1590,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '52.jpg',
+        img: '2.27.jpg',
         title: '',
         type: 'Белье №27',
         description: {
@@ -1611,9 +1630,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '53.jpg',
+        img: '2.28.jpg',
         title: '',
         type: 'Белье №28',
         description: {
@@ -1650,9 +1670,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '54.jpg',
+        img: '2.29.jpg',
         title: '',
         type: 'Белье №29',
         description: {
@@ -1689,9 +1710,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '55.jpg',
+        img: '2.30.jpg',
         title: '',
         type: 'Белье №30',
         description: {
@@ -1728,9 +1750,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '56.jpg',
+        img: '2.31.jpg',
         title: '',
         type: 'Белье №31',
         description: {
@@ -1767,9 +1790,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '57.jpg',
+        img: '2.32.jpg',
         title: '',
         type: 'Белье №32',
         description: {
@@ -1806,9 +1830,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '58.jpg',
+        img: '2.33.jpg',
         title: '',
         type: 'Белье №33',
         description: {
@@ -1845,9 +1870,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '59.jpg',
+        img: '2.34.jpg',
         title: '',
         type: 'Белье №34',
         description: {
@@ -1884,9 +1910,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '60.jpg',
+        img: '2.35.jpg',
         title: '',
         type: 'Белье №35',
         description: {
@@ -1923,9 +1950,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '61.jpg',
+        img: '2.36.jpg',
         title: '',
         type: 'Белье №36',
         description: {
@@ -1962,9 +1990,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '62.jpg',
+        img: '2.37.jpg',
         title: '',
         type: 'Белье №37',
         description: {
@@ -2001,9 +2030,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '63.jpg',
+        img: '2.38.jpg',
         title: '',
         type: 'Белье №38',
         description: {
@@ -2040,9 +2070,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '64.jpg',
+        img: '2.39.jpg',
         title: '',
         type: 'Белье №39',
         description: {
@@ -2079,9 +2110,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '65.jpg',
+        img: '2.40.jpg',
         title: '',
         type: 'Белье №40',
         description: {
@@ -2118,9 +2150,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '66.jpg',
+        img: '2.41.jpg',
         title: '',
         type: 'Белье №41',
         description: {
@@ -2157,9 +2190,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '67.jpg',
+        img: '2.42.jpg',
         title: '',
         type: 'Белье №42',
         description: {
@@ -2196,9 +2230,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '68.jpg',
+        img: '2.43.jpg',
         title: '',
         type: 'Белье №43',
         description: {
@@ -2235,9 +2270,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '69.jpg',
+        img: '2.44.jpg',
         title: '',
         type: 'Белье №44',
         description: {
@@ -2274,9 +2310,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '70.jpg',
+        img: '2.45.jpg',
         title: '',
         type: 'Белье №45',
         description: {
@@ -2313,9 +2350,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '71.jpg',
+        img: '2.46.jpg',
         title: '',
         type: 'Белье №46',
         description: {
@@ -2352,9 +2390,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '72.jpg',
+        img: '2.47.jpg',
         title: '',
         type: 'Белье №47',
         description: {
@@ -2391,9 +2430,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '73.jpg',
+        img: '2.48.jpg',
         title: '',
         type: 'Белье №48',
         description: {
@@ -2430,9 +2470,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '74.jpg',
+        img: '2.49.jpg',
         title: '',
         type: 'Белье №49',
         description: {
@@ -2469,9 +2510,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '75.jpg',
+        img: '2.50.jpg',
         title: '',
         type: 'Белье №50',
         description: {
@@ -2508,9 +2550,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '76.jpg',
+        img: '2.51.jpg',
         title: '',
         type: 'Белье №51',
         description: {
@@ -2547,9 +2590,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '77.jpg',
+        img: '2.52.jpg',
         title: '',
         type: 'Белье №52',
         description: {
@@ -2586,9 +2630,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '78.jpg',
+        img: '2.53.jpg',
         title: '',
         type: 'Белье №53',
         description: {
@@ -2625,9 +2670,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '79.jpg',
+        img: '2.54.jpg',
         title: '',
         type: 'Белье №54',
         description: {
@@ -2664,9 +2710,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '80.jpg',
+        img: '2.55.jpg',
         title: '',
         type: 'Белье №55',
         description: {
@@ -2703,9 +2750,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '81.jpg',
+        img: '2.56.jpg',
         title: '',
         type: 'Белье №56',
         description: {
@@ -2742,9 +2790,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '82.jpg',
+        img: '2.57.jpg',
         title: '',
         type: 'Белье №57',
         description: {
@@ -2781,9 +2830,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '83.jpg',
+        img: '2.58.jpg',
         title: '',
         type: 'Белье №58',
         description: {
@@ -2820,9 +2870,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '84.jpg',
+        img: '2.59.jpg',
         title: '',
         type: 'Белье №59',
         description: {
@@ -2859,9 +2910,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '85.jpg',
+        img: '2.60.jpg',
         title: '',
         type: 'Белье №60',
         description: {
@@ -2898,9 +2950,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '86.jpg',
+        img: '2.61.jpg',
         title: '',
         type: 'Белье №61',
         description: {
@@ -2937,9 +2990,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '87.jpg',
+        img: '2.62.jpg',
         title: '',
         type: 'Белье №62',
         description: {
@@ -2976,9 +3030,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '88.jpg',
+        img: '2.63.jpg',
         title: '',
         type: 'Белье №63',
         description: {
@@ -3015,9 +3070,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '89.jpg',
+        img: '2.64.jpg',
         title: '',
         type: 'Белье №64',
         description: {
@@ -3054,9 +3110,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '90.jpg',
+        img: '2.65.jpg',
         title: '',
         type: 'Белье №65',
         description: {
@@ -3093,9 +3150,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '91.jpg',
+        img: '2.66.jpg',
         title: '',
         type: 'Белье №66',
         description: {
@@ -3132,9 +3190,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '92.jpg',
+        img: '2.67.jpg',
         title: '',
         type: 'Белье №67',
         description: {
@@ -3171,9 +3230,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '93.jpg',
+        img: '2.68.jpg',
         title: '',
         type: 'Белье №68',
         description: {
@@ -3210,9 +3270,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '94.jpg',
+        img: '2.69.jpg',
         title: '',
         type: 'Белье №69',
         description: {
@@ -3249,9 +3310,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '95.jpg',
+        img: '2.70.jpg',
         title: '',
         type: 'Белье №70',
         description: {
@@ -3288,9 +3350,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '96.jpg',
+        img: '2.71.jpg',
         title: '',
         type: 'Белье №71',
         description: {
@@ -3327,9 +3390,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '97.jpg',
+        img: '2.72.jpg',
         title: '',
         type: 'Белье №72',
         description: {
@@ -3366,9 +3430,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '98.jpg',
+        img: '2.73.jpg',
         title: '',
         type: 'Белье №73',
         description: {
@@ -3405,9 +3470,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '99.jpg',
+        img: '2.74.jpg',
         title: '',
         type: 'Белье №74',
         description: {
@@ -3444,9 +3510,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '100.jpg',
+        img: '2.75.jpg',
         title: '',
         type: 'Белье №75',
         description: {
@@ -3483,9 +3550,10 @@ export let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newprice: '465 грн',
         package: 'Полиэтиленовая сумочка на молнии',
-    },{
+    },
+    {
         id: v1(),
-        img: '101.jpg',
+        img: '2.76.jpg',
         title: '',
         type: 'Белье №76',
         description: {
