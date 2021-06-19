@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
 @import "reset";
+@import "input-phone";
 
 $xl: 1200;
 $lg: 992;
@@ -112,4 +113,8 @@ body {
 
 .btn {
 
+}
+
+.phone {
+    max-width: 400px;
 }

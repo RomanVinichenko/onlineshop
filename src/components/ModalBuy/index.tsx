@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { ChangeEvent, useState } from 'react';
 import emailjs from 'emailjs-com';
+import PhoneInput from 'react-phone-number-input';
+
+import styles from './style.module.scss';
 
 const ModalBuy = () => {
+    const [value, setValue] = useState('');
+
     function sendEmail(e: any) {
         e.preventDefault();
 
@@ -20,16 +25,25 @@ const ModalBuy = () => {
     }
     return (
         <div>
-            <form className="contact-form" onSubmit={sendEmail}>
-                <label>Name</label>
-                <input type="text" name="name" id="name" />
-                <label>Email</label>
-                <input type="email" name="email" id="email" />
-                <label>Phone</label>
-                <input type="number" name="phone" id="phone" />
-                <label>Message</label>
-                <textarea name="message" id="message" />
-                <input type="submit" value="Send" />
+            <form className={styles['contact-form']} onSubmit={sendEmail}>
+                <input
+                    className={styles['contact-form__name']}
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Ваше имя"
+                />
+                <PhoneInput
+                    className={styles['contact-form__phone']}
+                    placeholder="Ваш телефон"
+                    defaultCountry="UA"
+                    value={value}
+                    onChange={setValue}
+                    name="phone"
+                    id="phone"
+                />
+                <textarea className={styles['contact-form__text']} name="message" id="message" />
+                <input className={styles['contact-form__btn']} type="submit" value="Send" />
             </form>
         </div>
     );
