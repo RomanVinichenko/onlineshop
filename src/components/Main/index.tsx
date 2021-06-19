@@ -17,7 +17,7 @@ const Main: FC = () => {
                     <article className={'card'}>
                         <img
                             className={'card__img'}
-                            src={process.env.PUBLIC_URL + '/images/1.1.jpg'}
+                            src={process.env.PUBLIC_URL + '/assets/images/1.1.jpg'}
                             alt="Логотип товара"
                         />
                         <h2 className={'card__title'}>Комплект постельного белья 2020</h2>
@@ -30,7 +30,7 @@ const Main: FC = () => {
                     <article className={'card'}>
                         <img
                             className={'card__img'}
-                            src={process.env.PUBLIC_URL + '/images/1.1.jpg'}
+                            src={process.env.PUBLIC_URL + '/assets/images/1.1.jpg'}
                             alt="Логотип товара"
                         />
                         <h2 className={'card__title'}>Комплект постельного белья 2020</h2>

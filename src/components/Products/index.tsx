@@ -7,15 +7,15 @@ import styles from './style.module.scss';
 const Products: FC = () => {
     return (
         <section className={styles['products']}>
-            <div className={styles['container']}>
+            <div className={'container'}>
                 <h2 className={styles['products__title']}>Товары</h2>
                 <div className={styles['products__inner']}>
                     {mockData.map((item) => {
                         return (
-                            <article className={'card'}>
+                            <article key={item.id} className={'card'}>
                                 <img
                                     className={'card__img'}
-                                    src={`./images/${item.img}`}
+                                    src={`${process.env.PUBLIC_URL}/assets/images/${item.img}`}
                                     alt="Логотип товара"
                                 />
                                 <h2 className={'card__title'}>{item.title} Название</h2>
