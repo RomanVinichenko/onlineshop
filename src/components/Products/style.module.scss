@@ -1,16 +1,11 @@
 .products {
     padding: 50px 0;
+    background-color: #fff5f6;
 
     &__list {
         display: flex;
         justify-content: center;
         margin-bottom: 20px;
-    }
-
-    &__list-item {
-        &:not(:last-child) {
-            margin-right: 30px;
-        }
     }
 
     &__title {
@@ -19,11 +14,32 @@
         text-align: center;
     }
 
+    &__item {
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+
+    &__button {
+        padding: 10px 20px;
+        border: 1px solid #7a2041;
+        border-radius: 35px;
+        background-color: transparent;
+        transition: all 0.3s;
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        &:hover {
+            color: #fff;
+            background-color: #7a2041;
+        }
+    }
+
     &__inner {
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
         margin: 0 auto;
         text-align: center;
     }
@@ -34,41 +50,36 @@
         padding: 20px 50px;
     }
 
-    &__btn {
-        padding: 10px 20px;
-        border-radius: 35px;
-        border: none;
-        background-color: #e5ec7f;
-        transition: background-color 0.3s;
-        margin-bottom: 50px;
-
-        &:hover {
-            color: #fff;
-            background-color: #000;
-        }
-    }
-
     &__text {
         margin-bottom: 20px;
     }
 
-    &__sizes {
+    &__price {
         margin-bottom: 20px;
     }
 
-    &__sizes-header {
-        margin-bottom: 10px;
-    }
-
-    &__list {
-        display: block;
-    }
-
     &__price-main {
-        text-decoration: line-through;
+        display: block;
+
+        span {
+            text-decoration: line-through;
+        }
     }
 
     &__price-sale {
         color: #000;
+    }
+
+    &__btn {
+        padding: 10px 20px;
+        border: 1px solid #7a2041;
+        border-radius: 35px;
+        box-shadow: 0 5px 5px 0 rgb(216, 124, 152);
+        background-color: #fff;
+        transition: box-shadow 0.5s;
+
+        &:hover {
+            box-shadow: none;
+        }
     }
 }

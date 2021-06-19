@@ -42,23 +42,23 @@ const Products: FC = () => {
                     <h2 className={styles['products__title']}>Товары</h2>
 
                     <ul className={styles['products__list']}>
-                        <li className={styles['products__list-item']}>
+                        <li className={styles['products__item']}>
                             <button
-                                className={styles['products__list-link']}
+                                className={styles['products__button']}
                                 onClick={() => setFilter('all')}>
                                 Все товары
                             </button>
                         </li>
-                        <li className={styles['products__list-item']}>
+                        <li className={styles['products__item']}>
                             <button
-                                className={styles['products__list-link']}
+                                className={styles['products__button']}
                                 onClick={() => setFilter('towel')}>
                                 Полотенца
                             </button>
                         </li>
-                        <li className={styles['products__list-item']}>
+                        <li className={styles['products__item']}>
                             <button
-                                className={styles['products__list-link']}
+                                className={styles['products__button']}
                                 onClick={() => setFilter('linens')}>
                                 Постельное белье
                             </button>
@@ -111,11 +111,14 @@ const Products: FC = () => {
                         <p className={styles['modal-product__title']}>{modalContent?.title}</p>
                         <p className={styles['modal-product__price']}>
                             {modalContent?.price}
-                            <span className={styles['modal-product__price-main']}>95 грн</span>
-                            <span className={styles['modal-product__price-sale']}>100 грн</span>
+                            <span className={styles['modal-product__price-main']}>
+                                Старая цена: <span>95 грн</span>
+                            </span>
+                            <span className={styles['modal-product__price-sale']}>
+                                Цена со скидкой: 100 грн
+                            </span>
                         </p>
                         <button className={styles['modal-product__btn']}>Заказать</button>
-                        <p className={styles['modal-product__size']}>{modalContent?.size}</p>
                     </div>
                 </Modal>
             )}
