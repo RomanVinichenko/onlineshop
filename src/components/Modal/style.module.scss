@@ -33,6 +33,10 @@
         border-radius: 15px;
         box-shadow: 0 2px 7px rgba(34, 34, 34, 0.5);
         background: #f9f9f9;
+
+        &--sm {
+            max-width: 500px;
+        }
     }
 
     &__close {

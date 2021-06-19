@@ -18,6 +18,7 @@ const Products: FC = () => {
     let [productList, setProductList] = useState(mockData);
     let [filter, setFilter] = useState<'all' | 'towel' | 'linens'>('all');
     let [openPayModal, setOpenPayModal] = useState<boolean>(false);
+    let [greetingUser, setGreetingUser] = useState('Здравствуйте! Хотел бы заказать ');
 
     let copyProductList = productList;
 
@@ -35,6 +36,17 @@ const Products: FC = () => {
         size: JSX.Element | string,
     ) => {
         setModalContent({ img, title, price, size });
+    };
+
+    const modalInModal = (name: string | undefined) => {
+        setModalContent(null);
+        setOpenPayModal(true);
+        setGreetingUser(`Здравствуйте! Хотел бы заказать ${name}`);
+    };
+
+    const infoProductForm = (name: string) => {
+        setOpenPayModal(true);
+        setGreetingUser(`Здравствуйте! Хотел бы заказать ${name}`);
     };
 
     return (
@@ -75,7 +87,7 @@ const Products: FC = () => {
                                         src={`${process.env.PUBLIC_URL}/assets/images/${item.img}`}
                                         alt=""
                                     />
-                                    <h2 className={'card__title'}>{item.title} Название</h2>
+                                    <h2 className={'card__title'}>{item.title} DELETE</h2>
                                     <div className={'card__prices'}>
                                         <span className={'card__price'}>{item.price}</span>
                                         <span className={'card__oldprice'}>{item.price}</span>
@@ -95,7 +107,7 @@ const Products: FC = () => {
                                         </button>
                                         <button
                                             className={'card__btn-buy'}
-                                            onClick={() => setOpenPayModal(true)}>
+                                            onClick={() => infoProductForm(item.title)}>
                                             Купить
                                         </button>
                                     </div>
@@ -124,13 +136,19 @@ const Products: FC = () => {
                                 Цена со скидкой: 100 грн
                             </span>
                         </p>
-                        <button className={styles['modal-product__btn']}>Заказать</button>
+                        <button
+                            className={styles['modal-product__btn']}
+                            onClick={() => {
+                                modalInModal(modalContent?.title);
+                            }}>
+                            Заказать
+                        </button>
                     </div>
                 </Modal>
             )}
             {openPayModal && (
-                <Modal callBack={() => setOpenPayModal(false)}>
-                    <ModalBuy />
+                <Modal callBack={() => setOpenPayModal(false)} small>
+                    <ModalBuy greetingUser={greetingUser} />
                 </Modal>
             )}
         </>
