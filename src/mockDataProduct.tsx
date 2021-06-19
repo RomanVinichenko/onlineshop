@@ -28,7 +28,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '1.1.jpg',
-        title: '',
+        title: 'Название 1',
         type: 'towel',
         description: {
             belong: 'Дом',
@@ -49,7 +49,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '1.2.jpg',
-        title: '',
+        title: 'Название 2',
         type: 'towel',
         description: {
             belong: 'Дом',
@@ -70,7 +70,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '1.3.jpg',
-        title: '',
+        title: 'Название 3',
         type: 'towel',
         description: {
             belong: 'Дом',
@@ -91,7 +91,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '1.4.jpg',
-        title: '',
+        title: 'Название',
         type: 'towel',
         description: {
             belong: 'Дом',
@@ -112,7 +112,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '1.5.jpg',
-        title: '',
+        title: 'Название',
         type: 'towel',
         description: {
             belong: 'Дом',
@@ -133,7 +133,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '1.6.jpg',
-        title: '',
+        title: 'Название',
         type: 'towel',
         description: {
             belong: 'Дом',
@@ -154,7 +154,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '1.7.jpg',
-        title: '',
+        title: 'Название',
         type: 'towel',
         description: {
             belong: 'Дом',
@@ -175,7 +175,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '1.8.jpg',
-        title: '',
+        title: 'Название',
         type: 'towel',
         description: {
             belong: 'Дом',
@@ -196,7 +196,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '1.9.jpg',
-        title: '',
+        title: 'Название',
         type: 'towel',
         description: {
             belong: 'Дом',
@@ -217,7 +217,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '1.10.jpg',
-        title: '',
+        title: 'Название',
         type: 'towel',
         description: {
             belong: 'Дом',
@@ -238,7 +238,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '1.11.jpg',
-        title: '',
+        title: 'Название',
         type: 'towel',
         description: {
             belong: 'Дом',
@@ -259,7 +259,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '1.12.jpg',
-        title: '',
+        title: 'Название',
         type: 'towel',
         description: {
             belong: 'Дом',
@@ -280,7 +280,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '1.13.jpg',
-        title: '',
+        title: 'Название',
         type: 'towel',
         description: {
             belong: 'Дом',
@@ -301,7 +301,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '1.14.jpg',
-        title: '',
+        title: 'Название',
         type: 'towel',
         description: {
             belong: 'Дом',
@@ -322,7 +322,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '1.15.jpg',
-        title: '',
+        title: 'Название',
         type: 'towel',
         description: {
             belong: 'Дом',
@@ -343,7 +343,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '1.16.jpg',
-        title: '',
+        title: 'Название',
         type: 'towel',
         description: {
             belong: 'Дом',
@@ -364,7 +364,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '1.17.jpg',
-        title: '',
+        title: 'Название',
         type: 'towel',
         description: {
             belong: 'Дом',
@@ -385,7 +385,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '1.18.jpg',
-        title: '',
+        title: 'Название',
         type: 'towel',
         description: {
             belong: 'Дом',
@@ -406,7 +406,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '1.19.jpg',
-        title: '',
+        title: 'Название',
         type: 'towel',
         description: {
             belong: 'Дом',
@@ -427,7 +427,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '1.20.jpg',
-        title: '',
+        title: 'Название',
         type: 'towel',
         description: {
             belong: 'Дом',
@@ -448,7 +448,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '1.21.jpg',
-        title: '',
+        title: 'Название',
         type: 'towel',
         description: {
             belong: 'Дом',
@@ -469,7 +469,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '1.22.jpg',
-        title: '',
+        title: 'Название',
         type: 'towel',
         description: {
             belong: 'Дом',
@@ -490,7 +490,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '1.23.jpg',
-        title: '',
+        title: 'Название',
         type: 'towel',
         description: {
             belong: 'Дом',
@@ -511,7 +511,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '1.24.jpg',
-        title: '',
+        title: 'Название',
         type: 'towel',
         description: {
             belong: 'Дом',
@@ -532,7 +532,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '1.25.jpg',
-        title: '',
+        title: 'Название',
         type: 'towel',
         description: {
             belong: 'Дом',
@@ -553,7 +553,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.1.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -593,7 +593,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.2.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -633,7 +633,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.3.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -673,7 +673,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.4.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -713,7 +713,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.5.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -753,7 +753,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.6.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -793,7 +793,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.7.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -833,7 +833,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.8.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -873,7 +873,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.9.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -913,7 +913,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.10.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -953,7 +953,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.11.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -993,7 +993,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.12.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -1033,7 +1033,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.13.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -1073,7 +1073,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.14.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -1113,7 +1113,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.15.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -1153,7 +1153,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.16.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -1193,7 +1193,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.17.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -1233,7 +1233,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.18.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -1273,7 +1273,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.19.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -1313,7 +1313,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.20.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -1353,7 +1353,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.21.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -1393,7 +1393,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.22.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -1433,7 +1433,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.23.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -1473,7 +1473,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.24.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -1513,7 +1513,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.25.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -1553,7 +1553,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.26.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -1593,7 +1593,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.27.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -1633,7 +1633,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.28.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -1673,7 +1673,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.29.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -1713,7 +1713,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.30.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -1753,7 +1753,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.31.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -1793,7 +1793,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.32.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -1833,7 +1833,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.33.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -1873,7 +1873,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.34.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -1913,7 +1913,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.35.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -1953,7 +1953,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.36.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -1993,7 +1993,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.37.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -2033,7 +2033,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.38.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -2073,7 +2073,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.39.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -2113,7 +2113,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.40.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -2153,7 +2153,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.41.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -2193,7 +2193,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.42.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -2233,7 +2233,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.43.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -2273,7 +2273,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.44.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -2313,7 +2313,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.45.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -2353,7 +2353,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.46.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -2393,7 +2393,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.47.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -2433,7 +2433,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.48.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -2473,7 +2473,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.49.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -2513,7 +2513,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.50.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -2553,7 +2553,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.51.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -2593,7 +2593,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.52.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -2633,7 +2633,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.53.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -2673,7 +2673,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.54.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -2713,7 +2713,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.55.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -2753,7 +2753,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.56.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -2793,7 +2793,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.57.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -2833,7 +2833,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.58.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -2873,7 +2873,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.59.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -2913,7 +2913,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.60.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -2953,7 +2953,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.61.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -2993,7 +2993,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.62.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -3033,7 +3033,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.63.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -3073,7 +3073,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.64.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -3113,7 +3113,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.65.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -3153,7 +3153,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.66.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -3193,7 +3193,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.67.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -3233,7 +3233,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.68.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -3273,7 +3273,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.69.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -3313,7 +3313,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.70.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -3353,7 +3353,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.71.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -3393,7 +3393,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.72.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -3433,7 +3433,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.73.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -3473,7 +3473,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.74.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -3513,7 +3513,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.75.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
@@ -3553,7 +3553,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: '2.76.jpg',
-        title: '',
+        title: 'Название',
         type: 'linens',
         description: {
             belong: 'Дом',
