@@ -4,13 +4,25 @@ import mockData from '../../mockDataProduct';
 
 import styles from './style.module.scss';
 
-const Products: FC = () => {
-    const [modalContent, setModalContent] = useState<any>(null);
+type ModalContentType = {
+    img: string;
+    title: string;
+    price: string;
+    size: JSX.Element | string;
+};
 
-    const modalOpenHandler = (img: string, title: string, price: string, size: JSX.Element | string) => {
+const Products: FC = () => {
+    const [modalContent, setModalContent] = useState<ModalContentType | null>(null);
+
+    const modalOpenHandler = (
+        img: string,
+        title: string,
+        price: string,
+        size: JSX.Element | string,
+    ) => {
         setModalContent({ img, title, price, size });
     };
-    console.log(modalContent);
+
     return (
         <>
             <section className={styles['products']}>
@@ -28,7 +40,18 @@ const Products: FC = () => {
                                     <h2 className={'card__title'}>{item.title} Название</h2>
                                     <span className={'card__price'}>{item.price}</span>
                                     <div className={'buttons'}>
-                                        <button className={'card__btn-more'} onClick={() => modalOpenHandler(item.img, item.title, item.price, item.description.text)}>Подробнее</button>
+                                        <button
+                                            className={'card__btn-more'}
+                                            onClick={() =>
+                                                modalOpenHandler(
+                                                    item.img,
+                                                    item.title,
+                                                    item.price,
+                                                    item.description.text,
+                                                )
+                                            }>
+                                            Подробнее
+                                        </button>
                                         <button className={'card__btn-buy'}>Купить</button>
                                     </div>
                                 </article>
@@ -41,17 +64,23 @@ const Products: FC = () => {
                 <div className={styles['modal']}>
                     <div className={styles['modal__content']}>
                         <div className={styles['modal__box']}>
-                            <img src={`${process.env.PUBLIC_URL}/assets/images/${modalContent?.img}`} alt='' />
+                            <img
+                                src={`${process.env.PUBLIC_URL}/assets/images/${modalContent?.img}`}
+                                alt=""
+                            />
                             <p>{modalContent?.title}</p>
                             <p>{modalContent?.price}</p>
                             <p>{modalContent?.size}</p>
-                            <button className={styles['modal__close']} onClick={() => setModalContent(null)}>X</button>
+                            <button
+                                className={styles['modal__close']}
+                                onClick={() => setModalContent(null)}>
+                                X
+                            </button>
                         </div>
                     </div>
                 </div>
             )}
         </>
-
     );
 };
 
