@@ -4,7 +4,8 @@
     right: 0;
     top: 0;
     z-index: 3;
-    padding: 20px 0;
+    padding: 10px 0;
+    height: 70px;
     background-color: #fff;
 
     &__img {
@@ -18,7 +19,6 @@
     .menu {
         display: flex;
         align-items: center;
-        justify-content: space-between;
 
         &__list {
             display: flex;
@@ -28,6 +28,18 @@
         &__list-item {
             &:not(:last-child) {
                 margin-right: 10px;
+            }
+        }
+
+        &__btn {
+            border: none;
+            border-bottom: 1px solid transparent;
+            font-size: 18px;
+            background-color: transparent;
+            transition: border-bottom 0.3s;
+
+            &:hover {
+                border-bottom: 1px solid;
             }
         }
     }
