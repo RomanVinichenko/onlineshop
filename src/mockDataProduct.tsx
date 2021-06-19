@@ -24,10 +24,10 @@ type DescriptionType = {
     width: string;
 };
 
-export let mockDataProduct: MockDataProductType[] = [
+let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
-        img: '1.1jpg',
+        img: '1.1.jpg',
         title: '',
         type: 'Полотенце №1',
         description: {
@@ -48,7 +48,7 @@ export let mockDataProduct: MockDataProductType[] = [
     },
     {
         id: v1(),
-        img: '1.2jpg',
+        img: '1.2.jpg',
         title: '',
         type: 'Полотенце №2',
         description: {
@@ -3591,3 +3591,5 @@ export let mockDataProduct: MockDataProductType[] = [
         package: 'Полиэтиленовая сумочка на молнии',
     },
 ];
+
+export default mockDataProduct;

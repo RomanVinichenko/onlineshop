@@ -1,0 +1,18 @@
+.products {
+    padding: 50px 0;
+
+    &__title {
+        margin-bottom: 20px;
+        font-size: 38px;
+        text-align: center;
+    }
+
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
