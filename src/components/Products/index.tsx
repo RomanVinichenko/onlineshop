@@ -3,6 +3,7 @@ import React, { FC, useState } from 'react';
 import mockData from '../../mockDataProduct';
 
 import styles from './style.module.scss';
+import Modal from '../Modal';
 
 type ModalContentType = {
     img: string;
@@ -35,7 +36,7 @@ const Products: FC = () => {
                                     <img
                                         className={'card__img'}
                                         src={`${process.env.PUBLIC_URL}/assets/images/${item.img}`}
-                                        alt="Логотип товара"
+                                        alt=""
                                     />
                                     <h2 className={'card__title'}>{item.title} Название</h2>
                                     <span className={'card__price'}>{item.price}</span>
@@ -61,24 +62,17 @@ const Products: FC = () => {
                 </div>
             </section>
             {modalContent && (
-                <div className={styles['modal']}>
-                    <div className={styles['modal__content']}>
-                        <div className={styles['modal__box']}>
-                            <img
-                                src={`${process.env.PUBLIC_URL}/assets/images/${modalContent?.img}`}
-                                alt=""
-                            />
-                            <p>{modalContent?.title}</p>
-                            <p>{modalContent?.price}</p>
-                            <p>{modalContent?.size}</p>
-                            <button
-                                className={styles['modal__close']}
-                                onClick={() => setModalContent(null)}>
-                                X
-                            </button>
-                        </div>
+                <Modal callBack={() => setModalContent(null)}>
+                    <img
+                        src={`${process.env.PUBLIC_URL}/assets/images/${modalContent?.img}`}
+                        alt=""
+                    />
+                    <div className="modal-product__info">
+                        <p>{modalContent?.title}</p>
+                        <p>{modalContent?.price}</p>
+                        <p>{modalContent?.size}</p>
                     </div>
-                </div>
+                </Modal>
             )}
         </>
     );
