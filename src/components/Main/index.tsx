@@ -13,7 +13,6 @@ const Main: FC = () => {
     return (
         <>
             <Header />
-
             <section className={styles['main']} id={'main'}>
                 <div className={'container'}>
                     <div className={styles['main__inner']}>

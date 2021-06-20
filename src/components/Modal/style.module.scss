@@ -1,4 +1,5 @@
 @import "../../ui/mixins";
+@import "../../ui/variables";
 
 .modal {
     position: fixed;
@@ -37,6 +38,10 @@
 
         &--sm {
             max-width: 500px;
+        }
+
+        @include r($md) {
+            flex-direction: column;
         }
     }
 

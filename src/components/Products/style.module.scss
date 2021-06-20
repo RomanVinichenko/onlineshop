@@ -67,14 +67,25 @@
 
 .modal-product {
 
+    &__img {
+        margin-bottom: 15px;
+    }
+
     &__title {
         font-size: 28px;
         font-weight: 700;
         margin-bottom: 20px;
+        @include r($md) {
+            font-size: 22px;
+        }
     }
 
     &__info {
         padding: 0 50px;
+
+        @include r($sm) {
+            padding: 0;
+        }
     }
 
     &__price {

@@ -12,7 +12,9 @@ const Header: FC = () => {
                     <a className={styles['logo']} href={'#main'}>
                         <img className={styles['header__img']} src={logo} alt="Premium Textile" />
                     </a>
-                    <h1 className={styles['header__title']}>Premium Textile</h1>
+                    <a className={styles['header__link']} href='#'>
+                        <h1 className={styles['header__title']}>Premium Textile</h1>
+                    </a>
                     <ul className={styles['menu__list']}>
                         <li className={styles['menu__list-item']}>
                             <a className={styles['menu__btn']} href={'#about'}>

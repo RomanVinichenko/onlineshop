@@ -15,9 +15,12 @@
         margin-right: 12px;
     }
 
-    &__title {
+    &__link {
         margin-right: auto;
+        cursor: pointer;
+    }
 
+    &__title {
         @include r($sm) {
             max-width: 60px;
             font-size: 18px;
