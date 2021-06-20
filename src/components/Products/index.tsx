@@ -53,7 +53,7 @@ const Products: FC = () => {
         <>
             <section className={styles['products']}>
                 <div className={'container'}>
-                    <h2 className={styles['products__title']}>Товары</h2>
+                    <h2 className={styles['products__title']}>Каталог</h2>
 
                     <ul className={styles['products__list']}>
                         <li className={styles['products__item']}>

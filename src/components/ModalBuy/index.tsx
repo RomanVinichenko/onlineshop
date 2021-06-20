@@ -16,6 +16,8 @@ const ModalBuy: FC<IModalBuyProps> = ({ greetingUser }) => {
         setTextareaValue(e.currentTarget.value);
     };
 
+    const [buttonText, setButtonText] = useState('Отправить заявку');
+
     function sendEmail(e: any) {
         e.preventDefault();
 
@@ -31,37 +33,43 @@ const ModalBuy: FC<IModalBuyProps> = ({ greetingUser }) => {
             );
 
         e.target.reset();
+        setTextareaValue('');
+        setButtonText('Сообщение отправлено');
+        setValue('');
+        setTimeout(function () {
+            setButtonText('Отправить заявку');
+        }, 3000);
     }
     return (
-        <div>
-            <form className={styles['contact-form']} onSubmit={sendEmail}>
-                <input
-                    className={styles['contact-form__name']}
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="Ваше имя"
-                />
-                <PhoneInput
-                    className={styles['contact-form__phone']}
-                    placeholder="Ваш телефон"
-                    international
-                    defaultCountry="UA"
-                    value={value}
-                    onChange={setValue}
-                    name="phone"
-                    id="phone"
-                />
-                <textarea
-                    className={styles['contact-form__text']}
-                    name="message"
-                    id="message"
-                    value={textareaValue}
-                    onChange={textareaValueHandler}
-                />
-                <input className={styles['contact-form__btn']} type="submit" value="Send" />
-            </form>
-        </div>
+        <form className={styles['contact-form']} onSubmit={sendEmail}>
+            <input
+                className={styles['contact-form__name']}
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Ваше имя"
+                required
+            />
+            <PhoneInput
+                className={styles['contact-form__phone']}
+                placeholder="Ваш телефон"
+                international
+                defaultCountry="UA"
+                value={value}
+                onChange={setValue}
+                name="phone"
+                id="phone"
+                required
+            />
+            <textarea
+                className={styles['contact-form__text']}
+                name="message"
+                id="message"
+                value={textareaValue}
+                onChange={textareaValueHandler}
+            />
+            <input className={styles['contact-form__btn']} type="submit" value={buttonText} />
+        </form>
     );
 };
 

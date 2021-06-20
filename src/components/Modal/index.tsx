@@ -8,15 +8,12 @@ interface IModalProps {
 }
 
 const Modal: FC<IModalProps> = ({ children, callBack, small }) => {
-    console.log(small);
     return (
         <div className={styles['modal']}>
             <div className={styles['modal__content']}>
                 <div className={`${styles['modal__box']} ${small && styles['modal__box--sm']}`}>
                     {children}
-                    <button className={styles['modal__close']} onClick={callBack}>
-                        X
-                    </button>
+                    <button className={styles['modal__close']} onClick={callBack}></button>
                 </div>
             </div>
         </div>
