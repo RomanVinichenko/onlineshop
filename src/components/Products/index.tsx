@@ -80,44 +80,46 @@ const Products: FC = () => {
                             </button>
                         </li>
                     </ul>
-                    <div className={styles['products__inner']}>
+                    <ul className={styles['products__inner']}>
                         {copyProductList.map((item) => {
                             return (
-                                <article key={item.id} className={'card'}>
-                                    <img
-                                        className={'card__img'}
-                                        src={`${process.env.PUBLIC_URL}/assets/images/${item.img}`}
-                                        alt=""
-                                    />
-                                    <h2 className={'card__title'}>{item.title}</h2>
-                                    <div className={'card__prices'}>
-                                        <span className={'card__price'}>{item.price}</span>
-                                        <span className={'card__oldprice'}>{item.price}</span>
-                                    </div>
-                                    <div className={'buttons'}>
-                                        <button
-                                            className={'card__btn-more'}
-                                            onClick={() =>
-                                                modalOpenHandler(
-                                                    item.img,
-                                                    item.title,
-                                                    item.price,
-                                                    item.description.text,
-                                                    item.newPrice,
-                                                )
-                                            }>
-                                            Подробнее
-                                        </button>
-                                        <button
-                                            className={'card__btn-buy'}
-                                            onClick={() => infoProductForm(item.title)}>
-                                            Купить
-                                        </button>
-                                    </div>
-                                </article>
+                                <li className={styles['products__card']}>
+                                    <article key={item.id} className={'card'}>
+                                        <img
+                                            className={'card__img'}
+                                            src={`${process.env.PUBLIC_URL}/assets/images/${item.img}`}
+                                            alt=""
+                                        />
+                                        <h2 className={'card__title'}>{item.title}</h2>
+                                        <div className={'card__prices'}>
+                                            <span className={'card__price'}>{item.price}</span>
+                                            <span className={'card__oldprice'}>{item.price}</span>
+                                        </div>
+                                        <div className={'buttons'}>
+                                            <button
+                                                className={'card__btn-more'}
+                                                onClick={() =>
+                                                    modalOpenHandler(
+                                                        item.img,
+                                                        item.title,
+                                                        item.price,
+                                                        item.description.text,
+                                                        item.newPrice,
+                                                    )
+                                                }>
+                                                Подробнее
+                                            </button>
+                                            <button
+                                                className={'card__btn-buy'}
+                                                onClick={() => infoProductForm(item.title)}>
+                                                Купить
+                                            </button>
+                                        </div>
+                                    </article>
+                                </li>
                             );
                         })}
-                    </div>
+                    </ul>
                 </div>
             </section>
             {modalContent && (
