@@ -131,11 +131,11 @@ const Products: FC = () => {
                     <div className={styles['modal-product__info']}>
                         <p className={styles['modal-product__title']}>{modalContent?.title}</p>
                         <p className={styles['modal-product__price']}>
-                            <span className={styles['modal-product__price-main']}>
-                                Старая цена: <span>{modalContent?.price}</span>
-                            </span>
                             <span className={styles['modal-product__price-sale']}>
-                                Цена со скидкой: {modalContent?.newPrice}
+                               {modalContent?.newPrice}
+                            </span>
+                            <span className={styles['modal-product__price-main']}>
+                                <span>{modalContent?.price}</span>
                             </span>
                         </p>
                         <div className={styles['modal-product__description']}>

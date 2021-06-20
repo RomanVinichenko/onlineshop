@@ -99,7 +99,6 @@ body {
         border-radius: 35px;
         color: #7a2041;
         background-color: #fff;
-        transition: box-shadow 0.5s;
 
         @include r($md) {
             padding: 6px 12px;
