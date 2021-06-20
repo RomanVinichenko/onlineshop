@@ -1,0 +1,46 @@
+@import "../../ui/variables";
+@import "../../ui/mixins";
+
+.feedback {
+    padding: 50px 0;
+
+    &__title {
+        margin-bottom: 30px;
+        font-size: 38px;
+        text-align: center;
+
+        @include r($md) {
+            font-size: 30px;
+        }
+
+        @include r($sm) {
+            font-size: 26px;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__card {
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #fff;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    &__card-img {
+        margin-right: 10px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}

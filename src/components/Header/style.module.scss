@@ -1,0 +1,70 @@
+@import "../../ui/mixins";
+@import "../../ui/variables";
+
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 3;
+    padding: 10px 0;
+    height: 70px;
+    border-bottom: 1px solid #ececec;
+    background-color: #fff5f6;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+    }
+
+    &__img {
+        margin-right: 12px;
+    }
+
+    &__title {
+        @include r($sm) {
+            max-width: 60px;
+            font-size: 18px;
+        }
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+
+        &__list {
+            display: flex;
+            align-items: center;
+        }
+
+        &__list-item {
+            &:not(:last-child) {
+                margin-right: 70px;
+            }
+
+            @include r($md) {
+                &:not(:last-child) {
+                    margin-right: 20px;
+                }
+            }
+        }
+
+        &__btn {
+            border: none;
+            border-bottom: 1px solid transparent;
+            font-weight: 500;
+            font-size: 18px;
+            background-color: transparent;
+            transition: border-bottom 0.3s;
+
+            &:hover {
+                border-bottom: 1px solid;
+            }
+
+            @include r($sm) {
+                font-size: 16px;
+            }
+        }
+    }
+}
