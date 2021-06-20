@@ -32,6 +32,7 @@ const ModalBuy: FC<IModalBuyProps> = ({ greetingUser }) => {
         setTimeout(function () {
             setButtonText('Отправить заявку');
         }, 3000);
+        // TODO: CLOSE
     }
     return (
         <form className={styles['contact-form']} onSubmit={sendEmail}>

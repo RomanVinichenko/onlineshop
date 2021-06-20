@@ -17,12 +17,12 @@ const Header: FC = () => {
                     </a>
                     <ul className={styles['menu__list']}>
                         <li className={styles['menu__list-item']}>
-                            <a className={styles['menu__btn']} href={'#about'}>
+                            <a className={styles['menu__btn']} href={'#products'}>
                                 Товары
                             </a>
                         </li>
                         <li className={styles['menu__list-item']}>
-                            <a className={styles['menu__btn']} href={'#products'}>
+                            <a className={styles['menu__btn']} href={'#about'}>
                                 О нас
                             </a>
                         </li>
