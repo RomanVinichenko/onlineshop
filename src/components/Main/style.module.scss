@@ -16,7 +16,7 @@
     &__description {
         margin-right: 25px;
         width: 100%;
-        max-width: 650px;
+        max-width: 670px;
 
         @include r($md) {
             margin-right: 0;
@@ -43,7 +43,7 @@
 
     &__subtitle {
         margin-bottom: 40px;
-        font-size: 24px;
+        font-size: 22px;
         color: #0a0103;
     }
 
@@ -53,6 +53,8 @@
     }
 
     &__list-item {
+        max-width: 300px;
+
         &:not(:last-child) {
             margin-right: 5px;
         }
@@ -60,6 +62,8 @@
 
     &__list-img {
         margin-bottom: 10px;
+        width: 55px;
+        height: 55px;
     }
 
     &__list-text {
@@ -158,5 +162,51 @@
             padding: 10px 15px;
             font-size: 16px;
         }
+    }
+}
+
+.feedback {
+    padding: 50px 0;
+
+    &__title {
+        margin-bottom: 30px;
+        font-size: 38px;
+        text-align: center;
+
+        @include r($md) {
+            font-size: 30px;
+        }
+
+        @include r($sm) {
+            font-size: 26px;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__card {
+        padding: 20px;
+        width: 100%;
+        max-width: 370px;
+        border-radius: 10px;
+        background-color: #fff;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    &__card-img {
+        margin-right: 10px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
     }
 }

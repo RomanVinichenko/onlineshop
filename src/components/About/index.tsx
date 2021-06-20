@@ -12,7 +12,7 @@ const About: FC = () => {
                         <li className={styles['about__item']}>
                             <img
                                 className={styles['about__img']}
-                                src={process.env.PUBLIC_URL + '../assets/images/delivery.png'}
+                                src={process.env.PUBLIC_URL + '../assets/images/delivery.svg'}
                                 alt="картинка доставки"
                             />
                             <p className={styles['about__text']}>
@@ -23,7 +23,7 @@ const About: FC = () => {
                         <li className={styles['about__item']}>
                             <img
                                 className={styles['about__img']}
-                                src={process.env.PUBLIC_URL + '../assets/images/view.png'}
+                                src={process.env.PUBLIC_URL + '../assets/images/view.svg'}
                                 alt="картинка обзора"
                             />
                             <p className={styles['about__text']}>
@@ -34,7 +34,7 @@ const About: FC = () => {
                         <li className={styles['about__item']}>
                             <img
                                 className={styles['about__img']}
-                                src={process.env.PUBLIC_URL + '../assets/images/clock.png'}
+                                src={process.env.PUBLIC_URL + '../assets/images/clock.svg'}
                                 alt="картинка часов"
                             />
                             <p className={styles['about__text']}>
@@ -48,43 +48,43 @@ const About: FC = () => {
                     <ul className={styles['about__items']}>
                         <li className={styles['about__item']}>
                             <img
-                                className={styles['about__img-garantee']}
-                                src={process.env.PUBLIC_URL + '../assets/images/box.png'}
+                                className={styles['about__img']}
+                                src={process.env.PUBLIC_URL + '../assets/images/box.svg'}
                                 alt="картинка доставки"
                             />
-                            <p className={styles['about__text-garantee']}>
+                            <p className={styles['about__text']}>
                                 -Товар полностью соотвествуют описанию и фото на сайте
                             </p>
                         </li>
                         <li className={styles['about__item']}>
                             <img
-                                className={styles['about__img-garantee']}
-                                src={process.env.PUBLIC_URL + '../assets/images/no.png'}
+                                className={styles['about__img']}
+                                src={process.env.PUBLIC_URL + '../assets/images/no.svg'}
                                 alt="картинка обзора"
                             />
-                            <p className={styles['about__text-garantee']}>
+                            <p className={styles['about__text']}>
                                 -Мы не берем с вас предоплату, оплачиваете товар только на отделении
                                 почтового отделения
                             </p>
                         </li>
                         <li className={styles['about__item']}>
                             <img
-                                className={styles['about__img-garantee']}
-                                src={process.env.PUBLIC_URL + '../assets/images/check.png'}
+                                className={styles['about__img']}
+                                src={process.env.PUBLIC_URL + '../assets/images/check.svg'}
                                 alt="картинка часов"
                             />
-                            <p className={styles['about__text-garantee']}>
+                            <p className={styles['about__text']}>
                                 -Перед отправкой товар проходит 100% проверку. Мы вернем вам деньги
                                 если что-то с вашим заказом будет не так.
                             </p>
                         </li>
                         <li className={styles['about__item']}>
                             <img
-                                className={styles['about__img-garantee']}
-                                src={process.env.PUBLIC_URL + '../assets/images/return.png'}
+                                className={styles['about__img']}
+                                src={process.env.PUBLIC_URL + '../assets/images/return.svg'}
                                 alt="картинка часов"
                             />
-                            <p className={styles['about__text-garantee']}>
+                            <p className={styles['about__text']}>
                                 -Обмен/Возврат товара до 14 дней
                             </p>
                         </li>
