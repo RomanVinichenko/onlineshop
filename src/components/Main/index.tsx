@@ -5,6 +5,7 @@ import Products from '../Products';
 import Modal from '../Modal';
 import ModalBuy from '../ModalBuy';
 import About from '../About';
+import Feedback from '../Feedback';
 
 import styles from './style.module.scss';
 
@@ -13,6 +14,7 @@ const Main: FC = () => {
     return (
         <>
             <Header />
+
             <section className={styles['main']} id={'main'}>
                 <div className={'container'}>
                     <div className={styles['main__inner']}>
@@ -90,70 +92,7 @@ const Main: FC = () => {
                 </Modal>
             )}
 
-            <section className={styles['feedback']}>
-                <div className={'container'}>
-                    <h2 className={styles['feedback__title']}>Отзывы</h2>
-                    <ul className={styles['feedback__cards']}>
-                        <li className={styles['feedback__card']}>
-                            <div className={styles['feedback__header']}>
-                                <img
-                                    className={styles['feedback__card-img']}
-                                    src={process.env.PUBLIC_URL + '../assets/images/dmitri.jpg'}
-                                    alt="аватар"
-                                />
-                                <div className={styles['feedback__card-name']}>
-                                    Дмитрий Васильев
-                                </div>
-                            </div>
-                            <p className={styles['feedback__card-text']}>
-                                Давно хотели приобрести однотонное бордовое постельное белье из
-                                натурального материала. Какое же было счастье, что я нашла этот
-                                магазин! Комплект безупречного качества, очень приятная ткань к
-                                телу, цвет не линяет при стирке и пока ещё не стал тусклее)) Удобно,
-                                что пододеяльник застегивается на молнию, размер идеально подходит
-                                для больших кроватей - простынь огромная и это большой + Удачи вам и
-                                благодарных клиентов!
-                            </p>
-                        </li>
-                        <li className={styles['feedback__card']}>
-                            <div className={styles['feedback__header']}>
-                                <img
-                                    className={styles['feedback__card-img']}
-                                    src={process.env.PUBLIC_URL + '../assets/images/lena.jpg'}
-                                    alt="аватар"
-                                />
-                                <div className={styles['feedback__card-name']}>Лена Вернадская</div>
-                            </div>
-                            <p className={styles['feedback__card-text']}>
-                                Все прекрасно, начиная от оформления заказа (консультация,
-                                отзывчивость, просто приятное общение), все сроки соблюдены, просто
-                                шикарный подарок в плане упаковки, качество неимоверное,
-                                индивидуальные размеры четко подходят))) Жду новых дизайнов!!!
-                            </p>
-                        </li>
-                        <li className={styles['feedback__card']}>
-                            <div className={styles['feedback__header']}>
-                                <img
-                                    className={styles['feedback__card-img']}
-                                    src={process.env.PUBLIC_URL + '../assets/images/svetlana.jpg'}
-                                    alt="аватар"
-                                />
-                                <div className={styles['feedback__card-name']}>
-                                    Светлана Богатырева
-                                </div>
-                            </div>
-                            <p className={styles['feedback__card-text']}>
-                                Твердая пятерка! Ткань очень качественная, плотная и при этом
-                                приятная на ощупь, аккуратные строчки. Цвет белья на сайте такой же,
-                                как и в живую. Заказывала через сайт, мне быстро перезвонили, быстро
-                                отправили. Приятно, когда к клиентам относятся с любовью даже в
-                                мелочах.. красиво упаковать и оформить. Обязательно закажу себе еще
-                                пару комплектов. Соотношение цена/качество выше всяческих похвал
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+            <Feedback />
         </>
     );
 };

@@ -1,4 +1,4 @@
-import React, { ChangeEvent, FC, FormEvent, FormEventHandler, useState } from 'react';
+import React, { ChangeEvent, FC, FormEvent, useState } from 'react';
 import emailjs from 'emailjs-com';
 import PhoneInput from 'react-phone-number-input';
 
