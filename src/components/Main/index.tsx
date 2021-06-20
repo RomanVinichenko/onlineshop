@@ -14,7 +14,7 @@ const Main: FC = () => {
         <>
             <Header />
 
-            <section className={styles['main']}>
+            <section className={styles['main']} id={'main'}>
                 <div className={'container'}>
                     <div className={styles['main__inner']}>
                         <div className={styles['main__description']}>
@@ -73,7 +73,7 @@ const Main: FC = () => {
                             <img
                                 className={styles['main__pic']}
                                 src={process.env.PUBLIC_URL + '/assets/images/2.31.jpg'}
-                                alt="top image"
+                                alt="Диван"
                             />
                         </div>
                     </div>

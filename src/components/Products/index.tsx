@@ -1,16 +1,17 @@
 import React, { FC, useState } from 'react';
 
 import mockData from '../../mockDataProduct';
-
-import styles from './style.module.scss';
 import Modal from '../Modal';
 import ModalBuy from '../ModalBuy';
+
+import styles from './style.module.scss';
 
 type ModalContentType = {
     img: string;
     title: string;
     price: string;
     size: JSX.Element | string;
+    newPrice: string;
 };
 
 const Products: FC = () => {
@@ -34,8 +35,9 @@ const Products: FC = () => {
         title: string,
         price: string,
         size: JSX.Element | string,
+        newPrice: string,
     ) => {
-        setModalContent({ img, title, price, size });
+        setModalContent({ img, title, price, size, newPrice });
     };
 
     const modalInModal = (name: string | undefined) => {
@@ -51,7 +53,7 @@ const Products: FC = () => {
 
     return (
         <>
-            <section className={styles['products']}>
+            <section className={styles['products']} id={'products'}>
                 <div className={'container'}>
                     <h2 className={styles['products__title']}>Каталог</h2>
 
@@ -101,6 +103,7 @@ const Products: FC = () => {
                                                     item.title,
                                                     item.price,
                                                     item.description.text,
+                                                    item.newPrice,
                                                 )
                                             }>
                                             Подробнее
@@ -128,14 +131,16 @@ const Products: FC = () => {
                     <div className={styles['modal-product__info']}>
                         <p className={styles['modal-product__title']}>{modalContent?.title}</p>
                         <p className={styles['modal-product__price']}>
-                            {modalContent?.price}
                             <span className={styles['modal-product__price-main']}>
-                                Старая цена: <span>95 грн</span>
+                                Старая цена: <span>{modalContent?.price}</span>
                             </span>
                             <span className={styles['modal-product__price-sale']}>
-                                Цена со скидкой: 100 грн
+                                Цена со скидкой: {modalContent?.newPrice}
                             </span>
                         </p>
+                        <div className={styles['modal-product__description']}>
+                            {modalContent?.size}
+                        </div>
                         <button
                             className={styles['modal-product__btn']}
                             onClick={() => {

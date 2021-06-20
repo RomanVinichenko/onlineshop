@@ -23,14 +23,7 @@ const ModalBuy: FC<IModalBuyProps> = ({ greetingUser }) => {
 
         emailjs
             .sendForm('service_zwzcuj8', 'template_nnofpol', e.target, 'user_lMzDOCxB7FMfmgkx2Qr4C')
-            .then(
-                (result) => {
-                    console.log(result.text);
-                },
-                (error) => {
-                    console.log(error.text);
-                },
-            );
+            .then();
 
         e.target.reset();
         setTextareaValue('');

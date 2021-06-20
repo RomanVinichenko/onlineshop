@@ -9,20 +9,20 @@ const Header: FC = () => {
         <header className={styles['header']}>
             <div className={'container'}>
                 <nav className={styles['menu']}>
-                    <a className={styles['logo']} href="#">
+                    <a className={styles['logo']} href={'#main'}>
                         <img className={styles['header__img']} src={logo} alt="Premium Textile" />
                     </a>
                     <h1 className={styles['header__title']}>Premium Textile</h1>
                     <ul className={styles['menu__list']}>
                         <li className={styles['menu__list-item']}>
-                            <button className={styles['menu__btn']}>
+                            <a className={styles['menu__btn']} href={'#about'}>
                                 Товары
-                            </button>
+                            </a>
                         </li>
                         <li className={styles['menu__list-item']}>
-                            <button className={styles['menu__btn']}>
+                            <a className={styles['menu__btn']} href={'#products'}>
                                 О нас
-                            </button>
+                            </a>
                         </li>
                     </ul>
                 </nav>

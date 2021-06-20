@@ -4,7 +4,7 @@ import styles from './style.module.scss';
 
 const About: FC = () => {
     return (
-        <section className={styles['about']}>
+        <section className={styles['about']} id={'about'}>
             <div className={'container'}>
                 <div className={styles['about__inner']}>
                     <h2 className={styles['about__title']}>О доставке</h2>
