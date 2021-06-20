@@ -1,4 +1,4 @@
-import React, { ChangeEvent, FC, useState } from 'react';
+import React, { ChangeEvent, FC, FormEvent, FormEventHandler, useState } from 'react';
 import emailjs from 'emailjs-com';
 import PhoneInput from 'react-phone-number-input';
 
@@ -18,14 +18,15 @@ const ModalBuy: FC<IModalBuyProps> = ({ greetingUser }) => {
 
     const [buttonText, setButtonText] = useState('Отправить заявку');
 
-    function sendEmail(e: any) {
+    function sendEmail(e: FormEvent<HTMLFormElement>) {
         e.preventDefault();
+        const element = e.target as HTMLFormElement;
 
         emailjs
-            .sendForm('service_zwzcuj8', 'template_nnofpol', e.target, 'user_lMzDOCxB7FMfmgkx2Qr4C')
+            .sendForm('service_zwzcuj8', 'template_nnofpol', element, 'user_lMzDOCxB7FMfmgkx2Qr4C')
             .then();
 
-        e.target.reset();
+        element.reset();
         setTextareaValue('');
         setButtonText('Сообщение отправлено');
         setValue('');
@@ -34,6 +35,7 @@ const ModalBuy: FC<IModalBuyProps> = ({ greetingUser }) => {
         }, 3000);
         // TODO: CLOSE
     }
+
     return (
         <form className={styles['contact-form']} onSubmit={sendEmail}>
             <input

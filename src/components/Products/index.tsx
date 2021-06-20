@@ -132,10 +132,10 @@ const Products: FC = () => {
                         <p className={styles['modal-product__title']}>{modalContent?.title}</p>
                         <p className={styles['modal-product__price']}>
                             <span className={styles['modal-product__price-sale']}>
-                                {modalContent?.newPrice}
+                                {modalContent?.price}
                             </span>
                             <span className={styles['modal-product__price-main']}>
-                                <span>{modalContent?.price}</span>
+                                <span>{modalContent?.newPrice}</span>
                             </span>
                         </p>
                         <div className={styles['modal-product__description']}>
