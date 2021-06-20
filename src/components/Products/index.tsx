@@ -89,7 +89,7 @@ const Products: FC = () => {
                                         src={`${process.env.PUBLIC_URL}/assets/images/${item.img}`}
                                         alt=""
                                     />
-                                    <h2 className={'card__title'}>{item.title} DELETE</h2>
+                                    <h2 className={'card__title'}>{item.title}</h2>
                                     <div className={'card__prices'}>
                                         <span className={'card__price'}>{item.price}</span>
                                         <span className={'card__oldprice'}>{item.price}</span>
@@ -132,7 +132,7 @@ const Products: FC = () => {
                         <p className={styles['modal-product__title']}>{modalContent?.title}</p>
                         <p className={styles['modal-product__price']}>
                             <span className={styles['modal-product__price-sale']}>
-                               {modalContent?.newPrice}
+                                {modalContent?.newPrice}
                             </span>
                             <span className={styles['modal-product__price-main']}>
                                 <span>{modalContent?.price}</span>

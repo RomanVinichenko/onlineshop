@@ -15,12 +15,12 @@ const Header: FC = () => {
                     <h1 className={styles['header__title']}>Premium Textile</h1>
                     <ul className={styles['menu__list']}>
                         <li className={styles['menu__list-item']}>
-                            <a className={styles['menu__btn']} href={'#about'}>
+                            <a className={styles['menu__btn']} href={'#products'}>
                                 Товары
                             </a>
                         </li>
                         <li className={styles['menu__list-item']}>
-                            <a className={styles['menu__btn']} href={'#products'}>
+                            <a className={styles['menu__btn']} href={'#about'}>
                                 О нас
                             </a>
                         </li>
