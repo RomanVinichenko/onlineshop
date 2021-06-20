@@ -11,8 +11,6 @@ const Header: FC = () => {
                 <nav className={styles['menu']}>
                     <a className={styles['logo']} href={'#main'}>
                         <img className={styles['header__img']} src={logo} alt="Premium Textile" />
-                    </a>
-                    <a className={styles['header__link']} href='#'>
                         <h1 className={styles['header__title']}>Premium Textile</h1>
                     </a>
                     <ul className={styles['menu__list']}>

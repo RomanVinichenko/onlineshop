@@ -9,15 +9,17 @@
     z-index: 3;
     padding: 10px 0;
     height: 70px;
-    background-color: #fff;
+    border-bottom: 1px solid #ececec;
+    background-color: #fff5f6;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+    }
 
     &__img {
         margin-right: 12px;
-    }
-
-    &__link {
-        margin-right: auto;
-        cursor: pointer;
     }
 
     &__title {
@@ -38,7 +40,13 @@
 
         &__list-item {
             &:not(:last-child) {
-                margin-right: 10px;
+                margin-right: 70px;
+            }
+
+            @include r($md){
+                &:not(:last-child) {
+                    margin-right: 20px;
+                }
             }
         }
 
@@ -48,6 +56,7 @@
             font-size: 18px;
             background-color: transparent;
             transition: border-bottom 0.3s;
+            font-weight: 500;
 
             &:hover {
                 border-bottom: 1px solid;

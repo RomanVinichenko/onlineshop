@@ -71,7 +71,7 @@ const Main: FC = () => {
                         <div>
                             <img
                                 className={styles['main__pic']}
-                                src={process.env.PUBLIC_URL + '/assets/images/2.31.jpg'}
+                                src={process.env.PUBLIC_URL + '/assets/images/linens/31.jpg'}
                                 alt="Диван"
                             />
                         </div>

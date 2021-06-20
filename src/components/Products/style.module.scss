@@ -66,15 +66,15 @@
 }
 
 .modal-product {
-
     &__img {
         margin-bottom: 15px;
     }
 
     &__title {
-        font-size: 28px;
-        font-weight: 700;
         margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 28px;
+
         @include r($md) {
             font-size: 22px;
         }
@@ -89,9 +89,9 @@
     }
 
     &__price {
+        display: flex;
         margin-bottom: 25px;
         font-size: 18px;
-        display: flex;
     }
 
     &__price-main {
@@ -99,9 +99,10 @@
 
         span {
             text-decoration: line-through;
-            color: #888888;
+            color: #888;
         }
     }
+
     &__price-sale {
         margin-right: 15px;
         font-weight: 600;
