@@ -5,14 +5,7 @@
     padding: 50px 0;
     background-color: #fff;
 
-    &__img,
     &__img-garantee {
-        width: 50px;
-        height: 50px;
-        margin-right: 20px;
-    }
-
-    &__img-garantee{
         width: 40px;
         height: 40px;
     }
@@ -40,9 +33,9 @@
 
     &__item {
         position: relative;
+        z-index: 1;
         display: flex;
         align-items: center;
-        z-index: 1;
         margin-bottom: 30px;
         width: 100%;
         max-width: 750px;
@@ -60,13 +53,24 @@
         }
     }
 
+    &__text-garantee {
+        border: none;
+    }
+
+    &__img,
+    &__img-garantee {
+        margin-right: 20px;
+        width: 50px;
+        height: 50px;
+    }
+
     &__text,
     &__text-garantee {
         position: relative;
         z-index: 111;
         padding: 20px 30px;
-        height: 100%;
         width: 100%;
+        height: 100%;
         border: 2px solid #7a2041;
         border-radius: 5px;
         font-size: 20px;
@@ -76,9 +80,5 @@
             padding: 10px 15px;
             font-size: 16px;
         }
-    }
-
-    &__text-garantee {
-        border: none
     }
 }
