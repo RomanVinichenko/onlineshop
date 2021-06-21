@@ -20,7 +20,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'towel/1.jpg',
-        title: 'Название 1',
+        title: 'Полотенце махровое 100% хлопок',
         type: 'towel',
         description: {
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
@@ -317,9 +317,7 @@ let mockDataProduct: MockDataProductType[] = [
         sale: '25%',
         newPrice: '165 грн',
     },
-  
-  
-  
+
     {
         id: v1(),
         img: 'linens/1.jpg',

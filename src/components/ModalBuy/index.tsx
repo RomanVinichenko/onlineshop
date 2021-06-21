@@ -6,9 +6,10 @@ import styles from './style.module.scss';
 
 interface IModalBuyProps {
     greetingUser?: string;
+    closeModal?: () => void;
 }
 
-const ModalBuy: FC<IModalBuyProps> = ({ greetingUser }) => {
+const ModalBuy: FC<IModalBuyProps> = ({ greetingUser, closeModal }) => {
     const [value, setValue] = useState('');
     const [textareaValue, setTextareaValue] = useState(greetingUser);
 
@@ -32,8 +33,8 @@ const ModalBuy: FC<IModalBuyProps> = ({ greetingUser }) => {
         setValue('');
         setTimeout(function () {
             setButtonText('Отправить заявку');
+            closeModal && closeModal();
         }, 3000);
-        // TODO: CLOSE
     }
 
     return (
@@ -57,16 +58,18 @@ const ModalBuy: FC<IModalBuyProps> = ({ greetingUser }) => {
                 id="phone"
                 required
             />
-<div className={styles['contact-form__category-inner']}>
-            <select className={styles['contact-form__category']} id="category" required>
-                <option value="Все" selected disabled>
-                    Выберете категорию
-                </option>
-                <option value="">Полотенца</option>
-                <option value="">Постельное белье</option>
-            </select>
-</div>
-
+            <div className={styles['contact-form__category-inner']}>
+                <select
+                    className={styles['contact-form__category']}
+                    id="category"
+                    name="category"
+                    required>
+                    <option value="Полотенца" selected>
+                        Полотенца
+                    </option>
+                    <option value="Постельное белье">Постельное белье</option>
+                </select>
+            </div>
             <textarea
                 className={styles['contact-form__text']}
                 placeholder="Введите ваше сообщение"
