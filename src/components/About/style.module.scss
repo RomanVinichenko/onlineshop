@@ -2,7 +2,7 @@
 @import "../../ui/variables";
 
 .about {
-    padding: 50px 0;
+    padding: 70px 0;
     background-color: #fff;
 
     &__title {
@@ -35,17 +35,6 @@
         width: 100%;
         max-width: 750px;
 
-        &::before {
-            content: "";
-            position: absolute;
-            left: -10px;
-            top: -10px;
-            z-index: -1;
-            width: 100%;
-            height: 100%;
-            border-radius: 5px;
-            background-color: #fff5f6;
-        }
     }
 
     &__img {

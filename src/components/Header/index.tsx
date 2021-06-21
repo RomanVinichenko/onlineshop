@@ -24,6 +24,11 @@ const Header: FC = () => {
                                 О нас
                             </a>
                         </li>
+                        <li className={styles['menu__list-item']}>
+                            <a className={styles['menu__btn']} href={'#feedback'}>
+                                Отзывы
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>

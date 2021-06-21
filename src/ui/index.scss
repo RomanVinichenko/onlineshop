@@ -37,6 +37,9 @@ body {
 
     &__img {
         margin-bottom: 20px;
+        max-width: 260px;
+        width: 100%;
+        height: 100%;
     }
 
     &__title {
@@ -51,12 +54,12 @@ body {
     &__price {
         margin-right: 10px;
         margin-bottom: 10px;
-        color: #f00;
+        color: #d40000;
     }
 
     &__oldprice {
         text-decoration: line-through;
-        color: #b4b4b4;
+        color: #000000;
     }
 
     .buttons {
@@ -110,12 +113,12 @@ body {
         box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
     }
 
-    @include r($md) {
-        max-width: 240px;
+    @include r($lg) {
+
     }
 
     @include r($sm) {
-        max-width: 324px;
+
     }
 }
 

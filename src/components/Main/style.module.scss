@@ -94,6 +94,9 @@
     }
 
     &__pic {
+        max-width: 545px;
+        width: 100%;
+        max-height: 490px;
         @include r($md) {
             display: none;
         }

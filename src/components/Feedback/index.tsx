@@ -9,7 +9,7 @@ import styles from './style.module.scss';
 const Feedback: FC = () => {
     SwiperCore.use([Autoplay, Pagination, Navigation]);
     return (
-        <section className={styles['feedback']}>
+        <section className={styles['feedback']} id={'feedback'}>
             <div className={'container'}>
                 <h2 className={styles['feedback__title']}>Отзывы</h2>
                 <Swiper
