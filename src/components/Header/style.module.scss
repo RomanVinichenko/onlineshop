@@ -12,24 +12,21 @@
     border-bottom: 1px solid #ececec;
     background-color: #fff5f6;
 
-
     .logo {
         display: flex;
         align-items: center;
         margin-right: auto;
-
     }
 
     &__img {
+        margin-right: 12px;
         width: 54px;
         height: 54px;
-        margin-right: 12px;
 
         @include r($sm) {
+            margin-right: 4px;
             width: 44px;
             height: 44px;
-            margin-right: 4px;
-
         }
     }
 
@@ -38,6 +35,7 @@
             max-width: 75px;
             font-size: 18px;
         }
+
         @include r($sm) {
             font-size: 16px;
         }
@@ -62,6 +60,7 @@
                     margin-right: 20px;
                 }
             }
+
             @include r($sm) {
                 &:not(:last-child) {
                     margin-right: 10px;

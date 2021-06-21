@@ -23,9 +23,7 @@
 
         @include r($md) {
             margin-bottom: 15px;
-
         }
-
     }
 
     &__img {
@@ -53,14 +51,12 @@
         @include r($lg) {
             padding: 15px;
             font-size: 14px;
-
         }
 
         @include r($sm) {
             padding: 5px;
-            font-size: 14px;
             border: 1px solid #7a2041;
-
+            font-size: 14px;
         }
     }
 }

@@ -9,7 +9,7 @@
         justify-content: space-around;
 
         @include r($lg) {
-           flex-wrap: wrap;
+            flex-wrap: wrap;
         }
     }
 

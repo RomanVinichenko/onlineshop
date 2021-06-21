@@ -46,8 +46,8 @@
         display: flex;
         flex-wrap: wrap;
         margin: 0 -5px;
-        text-align: center;
         overflow-x: hidden;
+        text-align: center;
     }
 
     &__item {
@@ -57,9 +57,11 @@
         @include r($lg) {
             width: calc(100% / 3 - 10px);
         }
+
         @include r($md) {
             width: calc(100% / 2 - 10px);
         }
+
         @include r($sm) {
             width: 100%;
         }
