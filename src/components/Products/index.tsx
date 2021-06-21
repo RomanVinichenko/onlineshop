@@ -136,6 +136,13 @@ const Products: FC = () => {
                     </div>
                     <div className={styles['modal-product__info']}>
                         <p className={styles['modal-product__title']}>{modalContent?.title}</p>
+                        <button>50x90(для рук)</button>
+                        <button>70x140(для тела)</button>
+                        <div className={styles['modal-product__counter']}>
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
                         <p className={styles['modal-product__price']}>
                             <span className={styles['modal-product__price-sale']}>
                                 {modalContent?.price}

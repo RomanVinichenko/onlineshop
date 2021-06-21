@@ -20,7 +20,6 @@ const Feedback: FC = () => {
                     pagination={{
                         clickable: true,
                     }}
-
                     breakpoints={{
                         900: {
                             slidesPerView: 3,

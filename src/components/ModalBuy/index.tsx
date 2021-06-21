@@ -70,6 +70,11 @@ const ModalBuy: FC<IModalBuyProps> = ({ greetingUser, closeModal }) => {
                     <option value="Постельное белье">Постельное белье</option>
                 </select>
             </div>
+            <div className={styles['contact-form__counter']}>
+                <button type="button">-</button>
+                <span>1</span>
+                <button type="button">+</button>
+            </div>
             <textarea
                 className={styles['contact-form__text']}
                 placeholder="Введите ваше сообщение"

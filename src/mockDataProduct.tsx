@@ -7,9 +7,8 @@ export type MockDataProductType = {
     type: string;
     description: DescriptionType;
     price: string;
-    sale?: boolean | any;
-    newPrice: string;
-    category?: CategoryType[] | any;
+    sale: boolean;
+    category: CategoryType[];
 };
 
 type DescriptionType = {
@@ -32,8 +31,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '136 грн',
-        sale: '25%',
-        newPrice: '100 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -49,7 +47,6 @@ let mockDataProduct: MockDataProductType[] = [
         },
         price: '95 грн',
         sale: true,
-        newPrice: '',
     },
     {
         id: v1(),
@@ -60,8 +57,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '136 грн',
-        sale: '25%',
-        newPrice: '100 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -72,8 +68,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '136 грн',
-        sale: '25%',
-        newPrice: '100 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -84,8 +79,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '95 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -96,8 +90,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '95 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -108,8 +101,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '95 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -120,8 +112,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '95 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -132,8 +123,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '95 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -144,8 +134,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '95 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -156,8 +145,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '136 грн',
-        sale: '25%',
-        newPrice: '100 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -168,8 +156,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '136 грн',
-        sale: '25%',
-        newPrice: '100 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -180,8 +167,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '136 грн',
-        sale: '25%',
-        newPrice: '100 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -192,8 +178,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '136 грн',
-        sale: '25%',
-        newPrice: '100 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -204,8 +189,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '95 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -216,8 +200,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '95 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -228,8 +211,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '95 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -240,8 +222,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '95 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -252,8 +233,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '95 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -264,8 +244,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '136 грн',
-        sale: '25%',
-        newPrice: '100 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -276,8 +255,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '136 грн',
-        sale: '25%',
-        newPrice: '100 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -288,8 +266,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '95 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -300,8 +277,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '95 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -312,8 +288,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '95 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -324,8 +299,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>полотенце из 100% хлопка (махра, плотность: 450 г/м2), махровое</p>,
         },
         price: '220грн',
-        sale: '25%',
-        newPrice: '165 грн',
+        sale: true,
     },
 
     {
@@ -345,8 +319,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -365,8 +338,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -385,8 +357,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -405,8 +376,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -425,8 +395,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -445,8 +414,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -465,8 +433,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -485,8 +452,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -505,8 +471,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -525,8 +490,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -545,8 +509,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -565,8 +528,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -585,8 +547,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -605,8 +566,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -625,8 +585,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -645,8 +604,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -665,8 +623,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -685,8 +642,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -705,8 +661,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -725,8 +680,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -745,8 +699,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -765,8 +718,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -785,8 +737,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -805,8 +756,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -825,8 +775,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -845,8 +794,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -865,8 +813,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -885,8 +832,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -905,8 +851,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -925,8 +870,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -945,8 +889,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -965,8 +908,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -985,8 +927,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -1005,8 +946,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -1025,8 +965,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -1045,8 +984,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -1065,8 +1003,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -1085,8 +1022,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1105,8 +1041,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1125,8 +1060,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1145,8 +1079,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1165,8 +1098,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1185,8 +1117,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1205,8 +1136,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1225,8 +1155,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1245,8 +1174,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1265,8 +1193,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1285,8 +1212,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1305,8 +1231,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1325,8 +1250,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1345,8 +1269,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1365,8 +1288,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1385,8 +1307,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1405,8 +1326,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1425,8 +1345,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1445,8 +1364,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1465,8 +1383,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1485,8 +1402,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1505,8 +1421,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1525,8 +1440,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1545,8 +1459,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1565,8 +1478,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1585,8 +1497,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1605,8 +1516,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1625,8 +1535,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1645,8 +1554,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1665,8 +1573,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1685,8 +1592,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1705,8 +1611,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1725,8 +1630,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1745,8 +1649,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1765,8 +1668,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1785,8 +1687,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1805,8 +1706,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '620 грн',
-        sale: '25%',
-        newPrice: '465 грн',
+        sale: true,
     },
     {
         id: v1(),
@@ -1825,8 +1725,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '1200 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
     {
         id: v1(),
@@ -1845,8 +1744,7 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '1200 грн',
-        sale: '25%',
-        newPrice: '',
+        sale: true,
     },
 ];
 
