@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import { v1 } from 'uuid';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Autoplay, Pagination, Navigation } from 'swiper/core';
 
@@ -18,32 +19,25 @@ const Feedback: FC = () => {
                     spaceBetween={30}
                     pagination={{
                         clickable: true,
-
                     }}
-                    // autoplay={{
-                    //     delay: 2500,
-                    //     disableOnInteraction: false,
-                    // }}
 
                     breakpoints={{
-                      900: {
-                      slidesPerView: 3,
-                      spaceBetween: 20,
-                    },
-                      600: {
-                      slidesPerView: 2,
-                      spaceBetween: 20,
-                    },
-                      0: {
-                      slidesPerView: 1,
-                        spaceBetween: 20,
-
-                      }
+                        900: {
+                            slidesPerView: 3,
+                            spaceBetween: 20,
+                        },
+                        600: {
+                            slidesPerView: 2,
+                            spaceBetween: 20,
+                        },
+                        0: {
+                            slidesPerView: 1,
+                            spaceBetween: 20,
+                        },
                     }}>
-
                     {sliderMockData.map((slide) => {
                         return (
-                            <SwiperSlide className={styles['feedback__slide']}>
+                            <SwiperSlide key={v1()} className={styles['feedback__slide']}>
                                 <div className={styles['feedback__card']}>
                                     <div className={styles['feedback__header']}>
                                         <img

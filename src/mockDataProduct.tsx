@@ -7,13 +7,19 @@ export type MockDataProductType = {
     type: string;
     description: DescriptionType;
     price: string;
-    sale: string;
+    sale?: boolean | any;
     newPrice: string;
-    category?: JSX.Element;
+    category?: CategoryType[] | any;
 };
 
 type DescriptionType = {
     text: JSX.Element;
+};
+
+type CategoryType = {
+    id: string;
+    descr: string;
+    count: number;
 };
 
 let mockDataProduct: MockDataProductType[] = [
@@ -34,11 +40,15 @@ let mockDataProduct: MockDataProductType[] = [
         img: 'towel/2.jpg',
         title: 'Название 2',
         type: 'towel',
+        category: [
+            { id: v1(), descr: '50x90(для рук)', count: 95 },
+            { id: v1(), descr: '70x140(для тела)', count: 190 },
+        ],
         description: {
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '95 грн',
-        sale: '25%',
+        sale: true,
         newPrice: '',
     },
     {

@@ -46,9 +46,9 @@ const Products: FC = () => {
         setGreetingUser(`Здравствуйте! Хотел бы заказать ${name}`);
     };
 
-    const infoProductForm = (name: string) => {
+    const infoProductForm = (title: string) => {
         setOpenPayModal(true);
-        setGreetingUser(`Здравствуйте! Хотел бы заказать ${name}`);
+        setGreetingUser(`Здравствуйте! Хотел бы заказать ${title}`);
     };
 
     const closeModal = () => {
@@ -87,8 +87,8 @@ const Products: FC = () => {
                     <ul className={styles['products__items']}>
                         {copyProductList.map((item) => {
                             return (
-                                <li className={styles['products__item']}>
-                                    <article key={item.id} className={'card'}>
+                                <li key={item.id} className={styles['products__item']}>
+                                    <article className={'card'}>
                                         <img
                                             className={'card__img'}
                                             src={`${process.env.PUBLIC_URL}/assets/images/${item.img}`}
