@@ -27,6 +27,10 @@ let mockDataProduct: MockDataProductType[] = [
         img: 'towel/1.jpg',
         title: 'Полотенце махровое 100% хлопок',
         type: 'towel',
+        category: [
+            { id: v1(), descr: '50x90(для рук)', count: 100 },
+            { id: v1(), descr: '70x140(для тела)', count: 195 },
+        ],
         description: {
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
@@ -36,7 +40,7 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'towel/2.jpg',
-        title: 'Название 2',
+        title: 'Полотенце махровое 100% хлопок',
         type: 'towel',
         category: [
             { id: v1(), descr: '50x90(для рук)', count: 95 },
@@ -46,13 +50,17 @@ let mockDataProduct: MockDataProductType[] = [
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '95 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'towel/3.jpg',
-        title: 'Название 3',
+        title: 'Полотенце махровое 100% хлопок',
         type: 'towel',
+        category: [
+            { id: v1(), descr: '50x90(для рук)', count: 100 },
+            { id: v1(), descr: '70x140(для тела)', count: 195 },
+        ],
         description: {
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
@@ -62,8 +70,12 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'towel/4.jpg',
-        title: 'Название 4',
+        title: 'Полотенце махровое 100% хлопок',
         type: 'towel',
+        category: [
+            { id: v1(), descr: '50x90(для рук)', count: 100 },
+            { id: v1(), descr: '70x140(для тела)', count: 195 },
+        ],
         description: {
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
@@ -73,74 +85,99 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'towel/5.jpg',
-        title: 'Название 5',
+        title: 'Полотенце махровое 100% хлопок',
         type: 'towel',
+        category: [
+            { id: v1(), descr: '50x90(для рук)', count: 95 },
+            { id: v1(), descr: '70x140(для тела)', count: 190 },
+        ],
         description: {
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '95 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'towel/6.jpg',
-        title: 'Название 6',
+        title: 'Полотенце махровое белое с рисунком',
         type: 'towel',
+        category: [
+            { id: v1(), descr: '50x90(для рук)', count: 95 },
+        ],
         description: {
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '95 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'towel/7.jpg',
-        title: 'Название 7',
+        title: 'Полотенце махровое голубое с рисунком',
         type: 'towel',
+        category: [
+            { id: v1(), descr: '50x90(для рук)', count: 95 },
+        ],
         description: {
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '95 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'towel/8.jpg',
-        title: 'Название 8',
+        title: 'Полотенце махровое кремовое с рисунком',
         type: 'towel',
+        category: [
+            { id: v1(), descr: '50x90(для рук)', count: 95 },
+        ],
         description: {
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '95 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'towel/9.jpg',
-        title: 'Название 9',
+        title: 'ПОЛОТЕНЦЕ МАХРОВОЕ ЛЮРЕКС (100% Хлопок)',
         type: 'towel',
+        category: [
+            { id: v1(), descr: '50x90(для рук)', count: 95 },
+            { id: v1(), descr: '70x140(для тела)', count: 190 },
+        ],
         description: {
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '95 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'towel/10.jpg',
-        title: 'Название 10',
+        title: 'Полотенце махровое люрекс (100% хлопок)',
         type: 'towel',
+        category: [
+            { id: v1(), descr: '50x90(для рук)', count: 95 },
+            { id: v1(), descr: '70x140(для тела)', count: 190 },
+        ],
         description: {
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '95 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'towel/11.jpg',
-        title: 'Название 11',
+        title: 'Полотенце махровое люрекс (100% хлопок)',
         type: 'towel',
+        category: [
+            { id: v1(), descr: '50x90(для рук)', count: 100 },
+            { id: v1(), descr: '70x140(для тела)', count: 195 },
+        ],
         description: {
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
@@ -150,8 +187,12 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'towel/12.jpg',
-        title: 'Название 12',
+        title: 'Полотенце махровое люрекс (100% хлопок)',
         type: 'towel',
+        category: [
+            { id: v1(), descr: '50x90(для рук)', count: 100 },
+            { id: v1(), descr: '70x140(для тела)', count: 195 },
+        ],
         description: {
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
@@ -161,8 +202,12 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'towel/13.jpg',
-        title: 'Название 13',
+        title: 'Полотенце махровое люрекс (100% хлопок)',
         type: 'towel',
+        category: [
+            { id: v1(), descr: '50x90(для рук)', count: 100 },
+            { id: v1(), descr: '70x140(для тела)', count: 195 },
+        ],
         description: {
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
@@ -172,8 +217,12 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'towel/14.jpg',
-        title: 'Название 14',
+        title: 'Полотенце махровое люрекс (100% хлопок)',
         type: 'towel',
+        category: [
+            { id: v1(), descr: '50x90(для рук)', count: 100 },
+            { id: v1(), descr: '70x140(для тела)', count: 195 },
+        ],
         description: {
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
@@ -183,63 +232,83 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'towel/15.jpg',
-        title: 'Название 15',
+        title: 'Полотенце махровое люрекс (100% хлопок)',
         type: 'towel',
+        category: [
+            { id: v1(), descr: '50x90(для рук)', count: 95 },
+            { id: v1(), descr: '70x140(для тела)', count: 190 },
+        ],
         description: {
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '95 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'towel/16.jpg',
-        title: 'Название 16',
+        title: 'ПОЛОТЕНЦЕ МАХРОВОЕ РОЗОВОЕ С РИСУНКОМ, 50Х90 СМ',
         type: 'towel',
+        category: [
+            { id: v1(), descr: '50x90(для рук)', count: 95 },
+        ],
         description: {
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '95 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'towel/17.jpg',
-        title: 'Название 17',
+        title: 'Полотенце махровое, белое 50х90 см',
         type: 'towel',
+        category: [
+            { id: v1(), descr: '50x90(для рук)', count: 95 },
+        ],
         description: {
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '95 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'towel/18.jpg',
-        title: 'Название 18',
+        title: 'Полотенце махровое, зеленое 50х90 см',
         type: 'towel',
+        category: [
+            { id: v1(), descr: '50x90(для рук)', count: 95 },
+        ],
         description: {
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '95 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'towel/19.jpg',
-        title: 'Название 19',
+        title: 'Полотенце махровое, синее 50х90 см',
         type: 'towel',
+        category: [
+            { id: v1(), descr: '50x90(для рук)', count: 95 },
+        ],
         description: {
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '95 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'towel/20.jpg',
-        title: 'Название 20',
+        title: 'ПОЛОТЕНЦЕ МАХРОВОЕ С УЗОРОМ (100% хлопок)',
         type: 'towel',
+        category: [
+            { id: v1(), descr: '50x90(для рук)', count: 100 },
+            { id: v1(), descr: '70x140(для тела)', count: 195 },
+        ],
         description: {
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
@@ -249,8 +318,12 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'towel/21.jpg',
-        title: 'Название 21',
+        title: 'ПОЛОТЕНЦЕ МАХРОВОЕ С УЗОРОМ (100% хлопок)',
         type: 'towel',
+        category: [
+            { id: v1(), descr: '50x90(для рук)', count: 100 },
+            { id: v1(), descr: '70x140(для тела)', count: 195 },
+        ],
         description: {
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
@@ -260,41 +333,58 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'towel/22.jpg',
-        title: 'Название 22',
+        title: 'ПОЛОТЕНЦЕ МАХРОВОЕ С УЗОРОМ (100% хлопок)',
         type: 'towel',
+        category: [
+            { id: v1(), descr: '50x90(для рук)', count: 95 },
+            { id: v1(), descr: '70x140(для тела)', count: 190 },
+        ],
         description: {
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '95 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'towel/23.jpg',
-        title: 'Название 23',
+        title: 'ПОЛОТЕНЦЕ МАХРОВОЕ С УЗОРОМ (100% хлопок)',
         type: 'towel',
+        category: [
+            { id: v1(), descr: '50x90(для рук)', count: 95 },
+            { id: v1(), descr: '70x140(для тела)', count: 190 },
+        ],
         description: {
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '95 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'towel/24.jpg',
-        title: 'Название 24',
+        title: 'ПОЛОТЕНЦЕ МАХРОВОЕ С УЗОРОМ (100% хлопок)',
         type: 'towel',
+        category: [
+            { id: v1(), descr: '50x90(для рук)', count: 95 },
+            { id: v1(), descr: '70x140(для тела)', count: 190 },
+        ],
         description: {
             text: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
         },
         price: '95 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'towel/25.jpg',
-        title: 'Название 25',
+        title: 'Полотенце белое 1',
         type: 'towel',
+        category: [
+            { id: v1(), descr: '50x70(для рук)', count: 165 },
+            { id: v1(), descr: '50x90(для тела)', count: 180 },
+            { id: v1(), descr: '70x140(для тела)', count: 330 },
+        ],
         description: {
             text: <p>полотенце из 100% хлопка (махра, плотность: 450 г/м2), махровое</p>,
         },
@@ -305,719 +395,643 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/1.jpg',
-        title: 'Название 26',
+        title: 'Комплект постельного белья (2020 - 3)',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/2.jpg',
-        title: 'Название 27',
+        title: 'КОМПЛЕКТ ПОСТЕЛЬНОГО БЕЛЬЯ PINK DREAMS',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/3.jpg',
-        title: 'Название 28',
+        title: 'Комплект постельного белья Айгуль',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/4.jpg',
-        title: 'Название 29',
+        title: 'Комплект постельного белья Амина',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/5.jpg',
-        title: 'Название 30',
+        title: 'Комплект постельного белья Афродита',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/6.jpg',
-        title: 'Название 31',
+        title: 'Комплект постельного белья Белла',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/7.jpg',
-        title: 'Название 32',
+        title: 'Комплект постельного белья Малва',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/8.jpg',
-        title: 'Название 33',
+        title: 'Комплект постельного белья Виолетта',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/9.jpg',
-        title: 'Название 34',
+        title: 'Комплект постельного белья Динара',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/10.jpg',
-        title: 'Название 35',
+        title: 'Комплект постельного белья Земфира',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/11.jpg',
-        title: 'Название 36',
+        title: 'Комплект постельного белья Клариса',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/12.jpg',
-        title: 'Название 37',
+        title: 'Комплект постельного белья Луиза',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/13.jpg',
-        title: 'Название 38',
+        title: 'Комплект постельного белья Рая',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/14.jpg',
-        title: 'Название 39',
+        title: 'Комплект постельного белья Хамели',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/15.jpg',
-        title: 'Название 40',
+        title: 'Комплект постельного белья Элеонора',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/16.jpg',
-        title: 'Название 41',
+        title: 'Комплект постельного белья (2020 - 6)',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/17.jpg',
-        title: 'Название 42',
+        title: 'Комплект постельного белья 2020 - 2',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/18.jpg',
-        title: 'Название 43',
+        title: 'Комплект постельного белья 2020 - 1',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/19.jpg',
-        title: 'Название 44',
+        title: 'Комплект постельного белья Tropic',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/20.jpg',
-        title: 'Название 45',
+        title: 'Комплект постельного белья Авроро',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/21.jpg',
-        title: 'Название 46',
+        title: 'Комплект постельного белья Айза',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/22.jpg',
-        title: 'Название 47',
+        title: 'Комплект постельного белья Алекса',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/23.jpg',
-        title: 'Название 48',
+        title: 'Комплект постельного белья Александра',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/24.jpg',
-        title: 'Название 49',
+        title: 'Комплект постельного белья Алисса',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/25.jpg',
-        title: 'Название 50',
+        title: 'Комплект постельного белья Аманда',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/26.jpg',
-        title: 'Название 51',
+        title: 'Комплект постельного белья Асена',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/27.jpg',
-        title: 'Название 52',
+        title: 'Комплект постельного белья Белинда',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/28.jpg',
-        title: 'Название 53',
+        title: 'Комплект постельного белья бязь голд',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/29.jpg',
-        title: 'Название 54',
+        title: 'КОМПЛЕКТ ПОСТЕЛЬНОГО БЕЛЬЯ БЯЗЬ ГОЛД LEAF',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/30.jpg',
-        title: 'Название 55',
+        title: 'КОМПЛЕКТ ПОСТЕЛЬНОГО БЕЛЬЯ БЯЗЬ ГОЛД КЛАРА',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/31.jpg',
-        title: 'Название 56',
+        title: 'КОМПЛЕКТ ПОСТЕЛЬНОГО БЕЛЬЯ БЯЗЬ ГОЛД РОУЗИ',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/32.jpg',
-        title: 'Название 57',
+        title: 'Комплект постельного белья бязь голд премиум',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/33.jpg',
-        title: 'Название 58',
+        title: 'Комплект постельного белья в клетку',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/34.jpg',
-        title: 'Название 59',
+        title: 'Комплект постельного белья Валерия',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/35.jpg',
-        title: 'Название 60',
+        title: 'Комплект постельного белья Веста',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/36.jpg',
-        title: 'Название 61',
+        title: 'Комплект постельного белья Виктория',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/37.jpg',
-        title: 'Название 62',
+        title: 'Комплект постельного белья Виталина',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 450 },
+            { id: v1(), descr: 'Двуспальный ', count: 550 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '450 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/38.jpg',
-        title: 'Название 63',
+        title: 'Комплект постельного белья Голд Элис',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1027,16 +1041,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/39.jpg',
-        title: 'Название 64',
+        title: 'Комплект постельного белья Динозавр',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1046,16 +1058,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/40.jpg',
-        title: 'Название 65',
+        title: 'Комплект постельного белья Виктория',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1065,16 +1075,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/41.jpg',
-        title: 'Название 66',
+        title: 'Комплект постельного белья Елизавета',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1084,16 +1092,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/42.jpg',
-        title: 'Название 67',
+        title: 'Комплект постельного белья Жаклин',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1103,16 +1109,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/43.jpg',
-        title: 'Название 68',
+        title: 'Комплект постельного белья Жасмин',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1122,16 +1126,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/44.jpg',
-        title: 'Название 69',
+        title: 'Комплект постельного белья Зара',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1141,16 +1143,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/45.jpg',
-        title: 'Название 70',
+        title: 'Комплект постельного белья Кактус',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1160,16 +1160,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/46.jpg',
-        title: 'Название 71',
+        title: 'Комплект постельного белья Камелия',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1179,16 +1177,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/47.jpg',
-        title: 'Название 72',
+        title: 'Комплект постельного белья Кейли',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1198,16 +1194,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/48.jpg',
-        title: 'Название 73',
+        title: 'Комплект постельного белья Корнелия',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1217,16 +1211,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/49.jpg',
-        title: 'Название 74',
+        title: 'Комплект постельного белья Лейла',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1236,16 +1228,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/50.jpg',
-        title: 'Название 75',
+        title: 'Комплект постельного белья Очарование',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1255,16 +1245,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/51.jpg',
-        title: 'Название 76',
+        title: 'Комплект постельного белья Катерина',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1274,16 +1262,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/52.jpg',
-        title: 'Название 77',
+        title: 'Комплект постельного белья Лили',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1293,16 +1279,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/53.jpg',
-        title: 'Название 78',
+        title: 'Комплект постельного белья Лимбо',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1312,16 +1296,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/54.jpg',
-        title: 'Название 79',
+        title: 'Комплект постельного белья Мадагаскар',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1331,16 +1313,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/55.jpg',
-        title: 'Название 80',
+        title: 'Комплект постельного белья Мальва',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1350,16 +1330,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/56.jpg',
-        title: 'Название 81',
+        title: 'Комплект постельного белья Маргарита',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1369,16 +1347,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/57.jpg',
-        title: 'Название 82',
+        title: 'tКомплект постельного белья Милена',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1388,16 +1364,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/58.jpg',
-        title: 'Название 83',
+        title: 'Комплект постельного белья Миранда',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1407,16 +1381,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/59.jpg',
-        title: 'Название 84',
+        title: 'Комплект постельного белья Богаство',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1426,16 +1398,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/60.jpg',
-        title: 'Название 85',
+        title: 'Комплект постельного белья Оливия',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1445,16 +1415,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/61.jpg',
-        title: 'Название 86',
+        title: 'Комплект постельного белья Пайпер',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1464,16 +1432,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/62.jpg',
-        title: 'Название 87',
+        title: 'Комплект постельного белья с Валентина',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1483,16 +1449,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/63.jpg',
-        title: 'Название 88',
+        title: 'Комплект постельного белья Синара',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1502,16 +1466,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/64.jpg',
-        title: 'Название 89',
+        title: 'Комплект постельного белья Фиона',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1521,16 +1483,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/65.jpg',
-        title: 'Название 90',
+        title: 'Комплект постельного белья Радость',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1540,16 +1500,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/66.jpg',
-        title: 'Название 91',
+        title: 'Комплект постельного белья Мексика',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1559,16 +1517,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/67.jpg',
-        title: 'Название 92',
+        title: 'Постельное белье бязь голд Ола',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1578,16 +1534,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/68.jpg',
-        title: 'Название 93',
+        title: 'Постельное белье бязь голд Афина',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1597,16 +1551,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/69.jpg',
-        title: 'Название 94',
+        title: 'Постельное белье бязь голд Лирика',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1616,16 +1568,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/70.jpg',
-        title: 'Название 95',
+        title: 'Постельное белье бязь голд Серое',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1635,16 +1585,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/71.jpg',
-        title: 'Название 96',
+        title: 'Комплект постельного белья Софа',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1654,16 +1602,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/72.jpg',
-        title: 'Название 97',
+        title: 'Комплект постельного белья Иринс',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1673,16 +1619,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/73.jpg',
-        title: 'Название 98',
+        title: 'Комплект постельного белья 2021-12',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1692,16 +1636,14 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/74.jpg',
-        title: 'Название 99',
+        title: 'Комплект постельного белья (2020-5)',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 465 },
+            { id: v1(), descr: 'Двуспальный ', count: 570 },
+            { id: v1(), descr: 'Евро', count: 600 },
+            { id: v1(), descr: 'Семейный ', count: 700 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
@@ -1711,40 +1653,36 @@ let mockDataProduct: MockDataProductType[] = [
     {
         id: v1(),
         img: 'linens/75.jpg',
-        title: 'Название 100',
+        title: 'Белое - СТРАЙП- САТИН БЕЖЕВЫЙ',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 1200 },
+            { id: v1(), descr: 'Двуспальный ', count: 1500 },
+            { id: v1(), descr: 'Евро', count: 1550 },
+            { id: v1(), descr: 'Семейный ', count: 1900 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '1200 грн',
-        sale: true,
+        sale: false,
     },
     {
         id: v1(),
         img: 'linens/76.jpg',
-        title: 'Название 101',
+        title: 'Черное - СТРАЙП- САТИН СЕРЫЙ',
         type: 'linens',
-        category: (
-            <>
-                <p>1,5-спальный</p>
-                <p>2-спальный</p>
-                <p>евро</p>
-                <p>Семейный</p>
-            </>
-        ),
+        category: [
+            { id: v1(), descr: 'Полуторный', count: 1200 },
+            { id: v1(), descr: 'Двуспальный ', count: 1500 },
+            { id: v1(), descr: 'Евро', count: 1550 },
+            { id: v1(), descr: 'Семейный ', count: 1900 },
+        ],
         description: {
             text: <p>Хлопок, полиэстер</p>,
         },
         price: '1200 грн',
-        sale: true,
+        sale: false,
     },
 ];
 

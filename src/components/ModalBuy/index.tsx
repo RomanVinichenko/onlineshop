@@ -58,6 +58,7 @@ const ModalBuy: FC<IModalBuyProps> = ({ greetingUser, closeModal }) => {
                 id="phone"
                 required
             />
+
             <div className={styles['contact-form__category-inner']}>
                 <select
                     className={styles['contact-form__category']}
@@ -70,11 +71,11 @@ const ModalBuy: FC<IModalBuyProps> = ({ greetingUser, closeModal }) => {
                     <option value="Постельное белье">Постельное белье</option>
                 </select>
             </div>
-            <div className={styles['contact-form__counter']}>
-                <button type="button">-</button>
-                <span>1</span>
-                <button type="button">+</button>
-            </div>
+          <div className={styles['modal-product__counter']}>
+            <button type={"button"}>-</button>
+            <input />
+            <button type={"button"}>+</button>
+          </div>
             <textarea
                 className={styles['contact-form__text']}
                 placeholder="Введите ваше сообщение"
