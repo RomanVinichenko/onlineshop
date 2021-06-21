@@ -11,18 +11,36 @@ const Feedback: FC = () => {
     return (
         <section className={styles['feedback']} id={'feedback'}>
             <div className={'container'}>
-                <h2 className={styles['feedback__title']}>Отзывы</h2>
+                <h2 className={'title'}>Отзывы</h2>
                 <Swiper
                     slidesPerView={3}
                     loop={true}
                     spaceBetween={30}
                     pagination={{
                         clickable: true,
+
                     }}
-                    autoplay={{
-                        delay: 2500,
-                        disableOnInteraction: false,
+                    // autoplay={{
+                    //     delay: 2500,
+                    //     disableOnInteraction: false,
+                    // }}
+
+                    breakpoints={{
+                      900: {
+                      slidesPerView: 3,
+                      spaceBetween: 20,
+                    },
+                      600: {
+                      slidesPerView: 2,
+                      spaceBetween: 20,
+                    },
+                      0: {
+                      slidesPerView: 1,
+                        spaceBetween: 20,
+
+                      }
                     }}>
+
                     {sliderMockData.map((slide) => {
                         return (
                             <SwiperSlide className={styles['feedback__slide']}>

@@ -7,7 +7,7 @@ const About: FC = () => {
         <section className={styles['about']} id={'about'}>
             <div className={'container'}>
                 <div className={styles['about__inner']}>
-                    <h2 className={styles['about__title']}>О доставке</h2>
+                    <h2 className={'title'}>О доставке</h2>
                     <ul className={styles['about__items']}>
                         <li className={styles['about__item']}>
                             <img
@@ -44,7 +44,7 @@ const About: FC = () => {
                     </ul>
                 </div>
                 <div className={styles['about__inner']}>
-                    <h2 className={styles['about__title']}>Гарантии</h2>
+                    <h2 className={'title'}>Гарантии</h2>
                     <ul className={styles['about__items']}>
                         <li className={styles['about__item']}>
                             <img

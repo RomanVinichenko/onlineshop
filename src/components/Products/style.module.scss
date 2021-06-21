@@ -14,27 +14,13 @@
         }
     }
 
-    &__title {
-        margin-bottom: 20px;
-        font-size: 38px;
-        text-align: center;
-
-        @include r($md) {
-            font-size: 30px;
-        }
-
-        @include r($sm) {
-            font-size: 26px;
-        }
-    }
-
-    &__item {
+    &__list-item {
         &:not(:last-child) {
             margin-right: 10px;
         }
     }
 
-    &__button {
+    &__list-button {
         padding: 10px 20px;
         border: 1px solid #7a2041;
         border-radius: 35px;
@@ -56,17 +42,27 @@
         }
     }
 
-    &__inner {
+    &__items {
         display: flex;
         flex-wrap: wrap;
-        margin: 0 -10px 0;
+        margin: 0 -5px;
         text-align: center;
         overflow-x: hidden;
     }
 
-    &__card {
-        width: calc(100% / 4 - 20px);
-        margin: 0 10px 20px;
+    &__item {
+        margin: 0 5px 20px;
+        width: calc(100% / 4 - 10px);
+
+        @include r($lg) {
+            width: calc(100% / 3 - 10px);
+        }
+        @include r($md) {
+            width: calc(100% / 2 - 10px);
+        }
+        @include r($sm) {
+            width: 100%;
+        }
     }
 }
 

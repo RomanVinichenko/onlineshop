@@ -4,29 +4,23 @@
 .feedback {
     padding: 70px 0;
 
-    &__title {
-        margin-bottom: 30px;
-        font-size: 38px;
-        text-align: center;
-
-        @include r($md) {
-            font-size: 30px;
-        }
-
-        @include r($sm) {
-            font-size: 26px;
-        }
-    }
-
     &__cards {
         display: flex;
         justify-content: space-around;
+
+        @include r($lg) {
+           flex-wrap: wrap;
+        }
     }
 
     &__card {
         padding: 20px;
         border-radius: 10px;
         background-color: #fff;
+    }
+
+    &__slide {
+        padding-bottom: 40px;
     }
 
     &__header {

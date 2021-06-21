@@ -5,20 +5,6 @@
     padding: 70px 0;
     background-color: #fff;
 
-    &__title {
-        margin-bottom: 30px;
-        font-size: 38px;
-        text-align: center;
-
-        @include r($md) {
-            font-size: 30px;
-        }
-
-        @include r($sm) {
-            font-size: 26px;
-        }
-    }
-
     &__items {
         display: flex;
         flex-direction: column;
@@ -35,12 +21,22 @@
         width: 100%;
         max-width: 750px;
 
+        @include r($md) {
+            margin-bottom: 15px;
+
+        }
+
     }
 
     &__img {
         margin-right: 20px;
         width: 50px;
         height: 50px;
+
+        @include r($md) {
+            width: 35px;
+            height: 35px;
+        }
     }
 
     &__text {
@@ -54,9 +50,17 @@
         font-size: 20px;
         background-color: transparent;
 
-        @include r($md) {
-            padding: 10px 15px;
-            font-size: 16px;
+        @include r($lg) {
+            padding: 15px;
+            font-size: 14px;
+
+        }
+
+        @include r($sm) {
+            padding: 5px;
+            font-size: 14px;
+            border: 1px solid #7a2041;
+
         }
     }
 }
