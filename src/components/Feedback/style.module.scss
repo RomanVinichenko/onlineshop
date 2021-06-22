@@ -37,4 +37,8 @@
         border-radius: 50%;
         object-fit: cover;
     }
+
+    &__card-text {
+        user-select: none;
+    }
 }
