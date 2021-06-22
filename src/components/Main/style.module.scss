@@ -130,11 +130,11 @@
     position: fixed;
     right: 15px;
     bottom: 10px;
+    z-index: 9;
     width: 40px;
     height: 40px;
-    cursor: pointer;
-    z-index: 9;
     background-image: url("../../images/up-arrow.svg");
+    cursor: pointer;
 
     @include r(1400) {
         bottom: 50px;
