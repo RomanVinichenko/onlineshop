@@ -75,7 +75,8 @@ const ModalBuy: FC<IModalBuyProps> = ({ greetingUser, closeModal }) => {
                 <button className={styles['contact-form__counter-btn']} type={'button'}>-</button>
                 <input
                        className={styles['contact-form__counter-input']}
-                       placeholder="1"
+                       readOnly
+
                 />
                 <button className={styles['contact-form__counter-btn']} type={'button'}>
                     +
