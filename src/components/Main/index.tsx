@@ -6,6 +6,8 @@ import Modal from '../Modal';
 import ModalBuy from '../ModalBuy';
 import About from '../About';
 import Feedback from '../Feedback';
+import Footer from '../Footer';
+import LazyLoad from 'react-lazyload';
 
 import styles from './style.module.scss';
 
@@ -13,7 +15,9 @@ const Main: FC = () => {
   let [openPayModal, setOpenPayModal] = useState<boolean>(false);
   return (
     <>
+      <LazyLoad>
       <Header/>
+      </LazyLoad>
 
       <section className={styles['main']} id={'main'}>
         <div className={'container'}>
@@ -28,12 +32,10 @@ const Main: FC = () => {
               </p>
               <div className={styles['main__decor']}>
                 <ul className={styles['main__list']}>
-                  <li className={styles['main__list-item']}>
+                  <li className={styles['main__list-item']} >
                     <img
                       className={styles['main__list-img']}
-                      src={
-                        process.env.PUBLIC_URL + '/assets/images/cotton.svg'
-                      }
+                      src={process.env.PUBLIC_URL + '../assets/images/cotton.svg'}
                       alt="картинка хлопок"
                     />
                     <p className={styles['main__list-text']}>
@@ -43,9 +45,7 @@ const Main: FC = () => {
                   <li className={styles['main__list-item']}>
                     <img
                       className={styles['main__list-img']}
-                      src={
-                        process.env.PUBLIC_URL + '/assets/images/change.svg'
-                      }
+                      src={process.env.PUBLIC_URL + '../assets/images/change.svg'}
                       alt="картинка обмен"
                     />
                     <p className={styles['main__list-text']}>
@@ -55,7 +55,7 @@ const Main: FC = () => {
                   <li className={styles['main__list-item']}>
                     <img
                       className={styles['main__list-img']}
-                      src={process.env.PUBLIC_URL + '/assets/images/gift.svg'}
+                      src={process.env.PUBLIC_URL + '../assets/images/gift.svg'}
                       alt="картинка подарок"
                     />
                     <p className={styles['main__list-text']}>
@@ -82,9 +82,12 @@ const Main: FC = () => {
         </div>
       </section>
 
+      <LazyLoad height={800}>
       <Products/>
+        </LazyLoad>
 
-      <About/>
+
+        <About/>
 
       {openPayModal && (
         <Modal callBack={() => setOpenPayModal(false)} small>
@@ -93,6 +96,11 @@ const Main: FC = () => {
       )}
 
       <Feedback/>
+
+      <Footer/>
+
+      <div className={styles['arrow']}></div>
+
     </>
   );
 };

@@ -11,9 +11,9 @@ const About: FC = () => {
                     <ul className={styles['about__items']}>
                         <li className={styles['about__item']}>
                             <img
-                                className={styles['about__img']}
-                                src={process.env.PUBLIC_URL + '../assets/images/delivery.svg'}
-                                alt="картинка доставки"
+                              className={styles['about__img']}
+                              src={process.env.PUBLIC_URL + '../assets/images/delivery.svg'}
+                              alt="картинка обзора"
                             />
                             <p className={styles['about__text']}>
                                 Доставка осуществляется курьерской службой "Нова Потча" наложенным

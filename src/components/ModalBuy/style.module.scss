@@ -4,23 +4,22 @@
     align-items: center;
     width: 100%;
 
-
     &__category-inner {
-        border-radius: 35px;
+        margin-bottom: 15px;
         padding: 2px 20px;
-        background-color: #fff;
-        margin-bottom: 10px;
         width: 100%;
-        border: 1px solid #7a2041;
         height: 42px;
+        border: 1px solid #7a2041;
+        border-radius: 15px;
+        background-color: #fff;
     }
+
     &__category {
-        border: none;
+        width: 400px;
         height: 35px;
-        width:400px;
-        border-radius: 35px;
-        cursor: pointer;
         outline: none;
+        border: none;
+        border-radius: 15px;
     }
 
     .contact-form__phone {
@@ -28,7 +27,7 @@
             padding: 10px 20px;
             outline: none;
             border: 1px solid #7a2041;
-            border-radius: 35px;
+            border-radius: 15px;
 
             &::placeholder {
                 color: #7a2041;
@@ -40,15 +39,33 @@
         padding: 10px 20px;
         height: 100px;
         border: 1px solid #7a2041;
-        border-radius: 35px;
+        border-radius: 15px;
         resize: none;
+    }
 
+&__counter {
+    display: flex;
+    align-items: center;
+}
+    &__counter-btn {
+        border: none;
+        background: transparent;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    &__counter-input {
+        width: 50px;
+        padding: 10px 20px;
+        outline: none;
+        border: 1px solid #7a2041;
+        border-radius: 15px;
     }
 
     &__btn {
         padding: 10px 20px;
         border: 1px solid #7a2041;
-        border-radius: 35px;
+        border-radius: 15px;
         color: #7a2041;
         background-color: #fff;
         transition: all 0.3s;
@@ -63,8 +80,7 @@
     &__name {
         padding: 10px 20px;
         border: 1px solid #7a2041;
-        border-radius: 35px;
-        cursor: pointer;
+        border-radius: 15px;
 
         &::placeholder {
             color: #7a2041;
@@ -73,8 +89,9 @@
 
     &__name,
     &__phone,
-    &__text {
-        margin-bottom: 10px;
+    &__text,
+    &__counter {
+        margin-bottom: 15px;
         width: 100%;
         outline: none;
     }

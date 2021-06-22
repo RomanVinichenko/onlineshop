@@ -125,3 +125,14 @@
         padding: 45px 0;
     }
 }
+
+.arrow {
+    position: fixed;
+    background-image: url('../../images/up-arrow.svg');
+    width: 40px;
+    height: 40px;
+    bottom: 10px;
+    right: 10px;
+    z-index: 999;
+    display: block;
+}
