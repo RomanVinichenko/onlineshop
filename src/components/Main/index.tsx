@@ -108,7 +108,7 @@ const Main: FC = () => {
 
             <Footer />
 
-            <Link className={styles['arrow']} to={'main'} smooth={true} duration={1000}></Link>
+            <Link className={styles['arrow']} to={'main'} smooth={true} duration={1000} />
         </>
     );
 };
