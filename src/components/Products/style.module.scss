@@ -116,12 +116,21 @@
         border: 1px solid #ba4564;
         font-size: 14px;
         background-color: #fff;
-        transition: color 0.5s, background-color 0.5s;
+        transition: color 0.3s, background-color 0.5s;
 
         &--active {
+            font-size: 18px;
             color: #fff;
             background-color: #7a2041;
-            font-size: 18px;
+
+            @include r($md) {
+                font-size: 16px;
+            }
+        }
+
+        @include r($md) {
+            margin-bottom: 10px;
+            padding: 3px;
         }
     }
 
