@@ -6,13 +6,15 @@ export type MockDataProductType = {
     title: string;
     type: string;
     description: JSX.Element;
-    price: string;
+    price: number;
     sale: boolean;
-    category: {
-        id: string;
-        descr: string;
-        count: number;
-    }[];
+    category: CategoryType[];
+};
+
+export type CategoryType = {
+    id: string;
+    descr: string;
+    count: number;
 };
 
 let mockDataProduct: MockDataProductType[] = [
@@ -22,11 +24,11 @@ let mockDataProduct: MockDataProductType[] = [
         title: 'Полотенце махровое 100% хлопок',
         type: 'towel',
         category: [
-            { id: v1(), descr: '50x90(для рук)', count: 100 },
+            { id: v1(), descr: '50x90(для рук)', count: 102 },
             { id: v1(), descr: '70x140(для тела)', count: 195 },
         ],
         description: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
-        price: '136 грн',
+        price: 136,
         sale: true,
     },
     {
@@ -39,7 +41,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: '70x140(для тела)', count: 190 },
         ],
         description: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
-        price: '95 грн',
+        price: 95,
         sale: false,
     },
     {
@@ -48,11 +50,11 @@ let mockDataProduct: MockDataProductType[] = [
         title: 'Полотенце махровое 100% хлопок',
         type: 'towel',
         category: [
-            { id: v1(), descr: '50x90(для рук)', count: 100 },
+            { id: v1(), descr: '50x90(для рук)', count: 102 },
             { id: v1(), descr: '70x140(для тела)', count: 195 },
         ],
         description: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
-        price: '136 грн',
+        price: 136,
         sale: true,
     },
     {
@@ -61,11 +63,11 @@ let mockDataProduct: MockDataProductType[] = [
         title: 'Полотенце махровое 100% хлопок',
         type: 'towel',
         category: [
-            { id: v1(), descr: '50x90(для рук)', count: 100 },
+            { id: v1(), descr: '50x90(для рук)', count: 102 },
             { id: v1(), descr: '70x140(для тела)', count: 195 },
         ],
         description: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
-        price: '136 грн',
+        price: 136,
         sale: true,
     },
     {
@@ -78,7 +80,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: '70x140(для тела)', count: 190 },
         ],
         description: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
-        price: '95 грн',
+        price: 95,
         sale: false,
     },
     {
@@ -88,7 +90,7 @@ let mockDataProduct: MockDataProductType[] = [
         type: 'towel',
         category: [{ id: v1(), descr: '50x90(для рук)', count: 95 }],
         description: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
-        price: '95 грн',
+        price: 95,
         sale: false,
     },
     {
@@ -98,7 +100,7 @@ let mockDataProduct: MockDataProductType[] = [
         type: 'towel',
         category: [{ id: v1(), descr: '50x90(для рук)', count: 95 }],
         description: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
-        price: '95 грн',
+        price: 95,
         sale: false,
     },
     {
@@ -108,7 +110,7 @@ let mockDataProduct: MockDataProductType[] = [
         type: 'towel',
         category: [{ id: v1(), descr: '50x90(для рук)', count: 95 }],
         description: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
-        price: '95 грн',
+        price: 95,
         sale: false,
     },
     {
@@ -121,7 +123,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: '70x140(для тела)', count: 190 },
         ],
         description: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
-        price: '95 грн',
+        price: 95,
         sale: false,
     },
     {
@@ -134,7 +136,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: '70x140(для тела)', count: 190 },
         ],
         description: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
-        price: '95 грн',
+        price: 95,
         sale: false,
     },
     {
@@ -143,11 +145,11 @@ let mockDataProduct: MockDataProductType[] = [
         title: 'Полотенце махровое люрекс (100% хлопок)',
         type: 'towel',
         category: [
-            { id: v1(), descr: '50x90(для рук)', count: 100 },
+            { id: v1(), descr: '50x90(для рук)', count: 102 },
             { id: v1(), descr: '70x140(для тела)', count: 195 },
         ],
         description: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
-        price: '136 грн',
+        price: 136,
         sale: true,
     },
     {
@@ -156,11 +158,11 @@ let mockDataProduct: MockDataProductType[] = [
         title: 'Полотенце махровое люрекс (100% хлопок)',
         type: 'towel',
         category: [
-            { id: v1(), descr: '50x90(для рук)', count: 100 },
+            { id: v1(), descr: '50x90(для рук)', count: 102 },
             { id: v1(), descr: '70x140(для тела)', count: 195 },
         ],
         description: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
-        price: '136 грн',
+        price: 136,
         sale: true,
     },
     {
@@ -169,11 +171,11 @@ let mockDataProduct: MockDataProductType[] = [
         title: 'Полотенце махровое люрекс (100% хлопок)',
         type: 'towel',
         category: [
-            { id: v1(), descr: '50x90(для рук)', count: 100 },
+            { id: v1(), descr: '50x90(для рук)', count: 102 },
             { id: v1(), descr: '70x140(для тела)', count: 195 },
         ],
         description: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
-        price: '136 грн',
+        price: 136,
         sale: true,
     },
     {
@@ -182,11 +184,11 @@ let mockDataProduct: MockDataProductType[] = [
         title: 'Полотенце махровое люрекс (100% хлопок)',
         type: 'towel',
         category: [
-            { id: v1(), descr: '50x90(для рук)', count: 100 },
+            { id: v1(), descr: '50x90(для рук)', count: 102 },
             { id: v1(), descr: '70x140(для тела)', count: 195 },
         ],
         description: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
-        price: '136 грн',
+        price: 136,
         sale: true,
     },
     {
@@ -199,7 +201,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: '70x140(для тела)', count: 190 },
         ],
         description: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
-        price: '95 грн',
+        price: 95,
         sale: false,
     },
     {
@@ -209,7 +211,7 @@ let mockDataProduct: MockDataProductType[] = [
         type: 'towel',
         category: [{ id: v1(), descr: '50x90(для рук)', count: 95 }],
         description: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
-        price: '95 грн',
+        price: 95,
         sale: false,
     },
     {
@@ -219,7 +221,7 @@ let mockDataProduct: MockDataProductType[] = [
         type: 'towel',
         category: [{ id: v1(), descr: '50x90(для рук)', count: 95 }],
         description: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
-        price: '95 грн',
+        price: 95,
         sale: false,
     },
     {
@@ -229,7 +231,7 @@ let mockDataProduct: MockDataProductType[] = [
         type: 'towel',
         category: [{ id: v1(), descr: '50x90(для рук)', count: 95 }],
         description: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
-        price: '95 грн',
+        price: 95,
         sale: false,
     },
     {
@@ -239,7 +241,7 @@ let mockDataProduct: MockDataProductType[] = [
         type: 'towel',
         category: [{ id: v1(), descr: '50x90(для рук)', count: 95 }],
         description: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
-        price: '95 грн',
+        price: 95,
         sale: false,
     },
     {
@@ -248,11 +250,11 @@ let mockDataProduct: MockDataProductType[] = [
         title: 'ПОЛОТЕНЦЕ МАХРОВОЕ С УЗОРОМ (100% хлопок)',
         type: 'towel',
         category: [
-            { id: v1(), descr: '50x90(для рук)', count: 100 },
+            { id: v1(), descr: '50x90(для рук)', count: 102 },
             { id: v1(), descr: '70x140(для тела)', count: 195 },
         ],
         description: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
-        price: '136 грн',
+        price: 136,
         sale: true,
     },
     {
@@ -261,11 +263,11 @@ let mockDataProduct: MockDataProductType[] = [
         title: 'ПОЛОТЕНЦЕ МАХРОВОЕ С УЗОРОМ (100% хлопок)',
         type: 'towel',
         category: [
-            { id: v1(), descr: '50x90(для рук)', count: 100 },
+            { id: v1(), descr: '50x90(для рук)', count: 102 },
             { id: v1(), descr: '70x140(для тела)', count: 195 },
         ],
         description: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
-        price: '136 грн',
+        price: 136,
         sale: true,
     },
     {
@@ -278,7 +280,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: '70x140(для тела)', count: 190 },
         ],
         description: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
-        price: '95 грн',
+        price: 95,
         sale: false,
     },
     {
@@ -291,7 +293,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: '70x140(для тела)', count: 190 },
         ],
         description: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
-        price: '95 грн',
+        price: 95,
         sale: false,
     },
     {
@@ -304,7 +306,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: '70x140(для тела)', count: 190 },
         ],
         description: <p>полотенце из 100% хлопка (махра, плотность: 400 г/м2), махровое</p>,
-        price: '95 грн',
+        price: 95,
         sale: false,
     },
     {
@@ -318,7 +320,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: '70x140(для тела)', count: 330 },
         ],
         description: <p>полотенце из 100% хлопка (махра, плотность: 450 г/м2), махровое</p>,
-        price: '220грн',
+        price: 220,
         sale: true,
     },
 
@@ -334,7 +336,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -349,7 +351,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -364,7 +366,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -379,7 +381,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -394,7 +396,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -409,7 +411,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -424,7 +426,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -439,7 +441,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -454,7 +456,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -469,7 +471,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -484,7 +486,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -499,7 +501,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -514,7 +516,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -529,7 +531,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -544,7 +546,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -559,7 +561,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -574,7 +576,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -589,7 +591,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -604,7 +606,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -619,7 +621,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -634,7 +636,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -649,7 +651,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -664,7 +666,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -679,7 +681,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -694,7 +696,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -709,7 +711,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -724,7 +726,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -739,7 +741,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -754,7 +756,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -769,7 +771,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -784,7 +786,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -799,7 +801,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -814,7 +816,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -829,7 +831,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -844,7 +846,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -859,7 +861,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -874,7 +876,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '450 грн',
+        price: 450,
         sale: false,
     },
     {
@@ -889,7 +891,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -904,7 +906,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -919,7 +921,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -934,7 +936,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -949,7 +951,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -964,7 +966,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -979,7 +981,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -994,7 +996,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -1009,7 +1011,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -1024,7 +1026,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -1039,7 +1041,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -1054,7 +1056,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -1069,7 +1071,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -1084,7 +1086,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -1099,7 +1101,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -1114,7 +1116,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -1129,7 +1131,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -1144,7 +1146,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -1159,7 +1161,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -1174,7 +1176,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -1189,7 +1191,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -1204,7 +1206,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -1219,7 +1221,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -1234,7 +1236,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -1249,7 +1251,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -1264,7 +1266,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -1279,7 +1281,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -1294,7 +1296,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -1309,7 +1311,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -1324,7 +1326,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -1339,7 +1341,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -1354,7 +1356,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -1369,7 +1371,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -1384,7 +1386,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -1399,7 +1401,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -1414,7 +1416,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -1429,7 +1431,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 700 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '620 грн',
+        price: 620,
         sale: true,
     },
     {
@@ -1444,7 +1446,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 1900 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '1200 грн',
+        price: 1200,
         sale: false,
     },
     {
@@ -1459,7 +1461,7 @@ let mockDataProduct: MockDataProductType[] = [
             { id: v1(), descr: 'Семейный ', count: 1900 },
         ],
         description: <p>Хлопок, полиэстер</p>,
-        price: '1200 грн',
+        price: 1200,
         sale: false,
     },
 ];

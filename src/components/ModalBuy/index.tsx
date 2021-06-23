@@ -1,23 +1,34 @@
 import React, { ChangeEvent, FC, FormEvent, useState } from 'react';
 import emailjs from 'emailjs-com';
 import PhoneInput from 'react-phone-number-input';
+import { CategoryType } from '../../mockDataProduct';
 
 import styles from './style.module.scss';
 
 interface IModalBuyProps {
     greetingUser?: string;
     closeModal?: () => void;
+    modalCategory?: CategoryType[];
 }
 
-const ModalBuy: FC<IModalBuyProps> = ({ greetingUser, closeModal }) => {
+const ModalBuy: FC<IModalBuyProps> = ({ greetingUser, closeModal, modalCategory }) => {
     const [value, setValue] = useState('');
     const [textareaValue, setTextareaValue] = useState(greetingUser);
+    const [buttonText, setButtonText] = useState('Отправить заявку');
 
     const textareaValueHandler = (e: ChangeEvent<HTMLTextAreaElement>) => {
         setTextareaValue(e.currentTarget.value);
     };
 
-    const [buttonText, setButtonText] = useState('Отправить заявку');
+    let [countProduct, setCountProduct] = useState<number>(1);
+
+    const countProductHandler = (operation: 'plus' | 'minus') => {
+        if (countProduct <= 1 && operation === 'minus') {
+            return;
+        }
+        operation === 'plus' && setCountProduct((countProduct += 1));
+        operation === 'minus' && setCountProduct((countProduct -= 1));
+    };
 
     function sendEmail(e: FormEvent<HTMLFormElement>) {
         e.preventDefault();
@@ -31,6 +42,7 @@ const ModalBuy: FC<IModalBuyProps> = ({ greetingUser, closeModal }) => {
         setTextareaValue('');
         setButtonText('Сообщение отправлено');
         setValue('');
+        setCountProduct(1);
         setTimeout(function () {
             setButtonText('Отправить заявку');
             closeModal && closeModal();
@@ -59,29 +71,42 @@ const ModalBuy: FC<IModalBuyProps> = ({ greetingUser, closeModal }) => {
                 required
             />
 
-            <div className={styles['contact-form__category-inner']}>
-                <select
-                    className={styles['contact-form__category']}
-                    id="category"
-                    name="category"
-                    required>
-                    <option value="Полотенца" selected>
-                        Полотенца
-                    </option>
-                    <option value="Постельное белье">Постельное белье</option>
-                </select>
-            </div>
-            <div className={styles['contact-form__counter']}>
-                <button className={styles['contact-form__counter-btn']} type={'button'}>-</button>
-                <input
-                       className={styles['contact-form__counter-input']}
-                       readOnly
-
-                />
-                <button className={styles['contact-form__counter-btn']} type={'button'}>
-                    +
-                </button>
-            </div>
+            {modalCategory && (
+                <>
+                    <div className={styles['contact-form__category-inner']}>
+                        <select
+                            className={styles['contact-form__category']}
+                            id="category"
+                            name="category"
+                            required>
+                            {modalCategory.map((item) => {
+                                return <option value={item.descr}>{item.descr}</option>;
+                            })}
+                        </select>
+                    </div>
+                    <div className={styles['contact-form__counter']}>
+                        <button
+                            className={styles['contact-form__counter-btn']}
+                            onClick={() => countProductHandler('minus')}
+                            type={'button'}>
+                            -
+                        </button>
+                        <input
+                            className={styles['contact-form__counter-input']}
+                            id="count"
+                            name="count"
+                            readOnly
+                            value={countProduct}
+                        />
+                        <button
+                            className={styles['contact-form__counter-btn']}
+                            onClick={() => countProductHandler('plus')}
+                            type={'button'}>
+                            +
+                        </button>
+                    </div>
+                </>
+            )}
             <textarea
                 className={styles['contact-form__text']}
                 placeholder="Введите ваше сообщение"

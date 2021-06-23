@@ -71,12 +71,12 @@
 
         &__btn {
             border: none;
-            cursor: pointer;
             border-bottom: 1px solid transparent;
             font-weight: 500;
             font-size: 18px;
             background-color: transparent;
             transition: border-bottom 0.3s;
+            cursor: pointer;
 
             &:hover {
                 border-bottom: 1px solid;

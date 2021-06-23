@@ -25,13 +25,18 @@
         border: 1px solid #7a2041;
         border-radius: 35px;
         background-color: transparent;
-        transition: all 0.3s;
+        transition: color 0.5s, background-color 0.5s;
 
         &:not(:last-child) {
             margin-right: 10px;
         }
 
         &:hover {
+            color: #fff;
+            background-color: #7a2041;
+        }
+
+        &--active {
             color: #fff;
             background-color: #7a2041;
         }
@@ -111,6 +116,12 @@
         border: 1px solid #ba4564;
         font-size: 14px;
         background-color: #fff;
+        transition: color 0.5s, background-color 0.5s;
+
+        &--active {
+            color: #fff;
+            background-color: #7a2041;
+        }
     }
 
     &__price {

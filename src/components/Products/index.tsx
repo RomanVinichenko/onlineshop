@@ -1,6 +1,6 @@
 import React, { FC, useState } from 'react';
 
-import mockData from '../../mockDataProduct';
+import mockData, { CategoryType } from '../../mockDataProduct';
 import Modal from '../Modal';
 import ModalBuy from '../ModalBuy';
 
@@ -9,9 +9,10 @@ import styles from './style.module.scss';
 type ModalContentType = {
     img: string;
     title: string;
-    price: string;
+    price: number;
     size: JSX.Element | string;
     sale: boolean;
+    category: CategoryType[];
 };
 
 const Products: FC = () => {
@@ -20,6 +21,8 @@ const Products: FC = () => {
     let [filter, setFilter] = useState<'all' | 'towel' | 'linens'>('all');
     let [openPayModal, setOpenPayModal] = useState<boolean>(false);
     let [greetingUser, setGreetingUser] = useState('Здравствуйте! Хотел бы заказать ');
+    let [modalPrice, setModalPrice] = useState<number>(0);
+    let [modalCategory, setModalCategory] = useState<CategoryType[]>([]);
 
     let copyProductList = productList;
 
@@ -30,25 +33,33 @@ const Products: FC = () => {
         copyProductList = productList.filter((item) => item.type === 'linens');
     }
 
+    const modalPriceHandler = (money: number) => {
+        setModalPrice(money);
+    };
+
     const modalOpenHandler = (
         img: string,
         title: string,
-        price: string,
+        price: number,
         size: JSX.Element | string,
         sale: boolean,
+        category: CategoryType[],
     ) => {
-        setModalContent({ img, title, price, size, sale });
+        setModalContent({ img, title, price, size, sale, category });
+        setModalPrice(sale ? price * 0.75 : price);
     };
 
-    const modalInModal = (name: string | undefined) => {
+    const modalInModal = (title: string, category: CategoryType[]) => {
         setModalContent(null);
         setOpenPayModal(true);
-        setGreetingUser(`Здравствуйте! Хотел бы заказать ${name}`);
+        setGreetingUser(`Здравствуйте! Хотел бы заказать ${title}`);
+        setModalCategory(category);
     };
 
-    const infoProductForm = (title: string) => {
+    const infoProductForm = (title: string, category: CategoryType[]) => {
         setOpenPayModal(true);
         setGreetingUser(`Здравствуйте! Хотел бы заказать ${title}`);
+        setModalCategory(category);
     };
 
     const closeModal = () => {
@@ -64,21 +75,31 @@ const Products: FC = () => {
                     <ul className={styles['products__list']}>
                         <li className={styles['products__list-item']}>
                             <button
-                                className={styles['products__list-button']}
+                                className={`${styles['products__list-button']} ${
+                                    filter === 'all' ? styles['products__list-button--active'] : ''
+                                }`}
                                 onClick={() => setFilter('all')}>
                                 Все товары
                             </button>
                         </li>
                         <li className={styles['products__list-item']}>
                             <button
-                                className={styles['products__list-button']}
+                                className={`${styles['products__list-button']} ${
+                                    filter === 'towel'
+                                        ? styles['products__list-button--active']
+                                        : ''
+                                }`}
                                 onClick={() => setFilter('towel')}>
                                 Полотенца
                             </button>
                         </li>
                         <li className={styles['products__list-item']}>
                             <button
-                                className={styles['products__list-button']}
+                                className={`${styles['products__list-button']} ${
+                                    filter === 'linens'
+                                        ? styles['products__list-button--active']
+                                        : ''
+                                }`}
                                 onClick={() => setFilter('linens')}>
                                 Постельное белье
                             </button>
@@ -96,8 +117,15 @@ const Products: FC = () => {
                                         />
                                         <h2 className={'card__title'}>{item.title}</h2>
                                         <div className={'card__prices'}>
-                                            <span className={'card__price'}>{item.price}</span>
-                                            <span className={'card__oldprice'}>{item.price}</span>
+                                            <span className={'card__price'}>
+                                                {item.category[0].count} грн
+                                            </span>
+
+                                            {item.sale && (
+                                                <span className={'card__oldprice'}>
+                                                    {item.price} грн
+                                                </span>
+                                            )}
                                         </div>
                                         <div className={'buttons'}>
                                             <button
@@ -109,13 +137,16 @@ const Products: FC = () => {
                                                         item.price,
                                                         item.description,
                                                         item.sale,
+                                                        item.category,
                                                     )
                                                 }>
                                                 Подробнее
                                             </button>
                                             <button
                                                 className={'card__btn-buy'}
-                                                onClick={() => infoProductForm(item.title)}>
+                                                onClick={() =>
+                                                    infoProductForm(item.title, item.category)
+                                                }>
                                                 Купить
                                             </button>
                                         </div>
@@ -136,16 +167,22 @@ const Products: FC = () => {
                     </div>
                     <div className={styles['modal-product__info']}>
                         <h2 className={styles['modal-product__title']}>{modalContent?.title}</h2>
-                        <button className={styles['modal-product__type-btn']}>
-                            50x90(для рук)
-                        </button>
-                        <button className={styles['modal-product__type-btn']}>
-                            70x140(для тела)
-                        </button>
-
+                        {modalContent?.category.map((item) => {
+                            return (
+                                <button
+                                    className={`${styles['modal-product__type-btn']} ${
+                                        item.count === modalPrice
+                                            ? styles['modal-product__type-btn--active']
+                                            : ''
+                                    }`}
+                                    onClick={() => modalPriceHandler(item.count)}>
+                                    {item.descr}
+                                </button>
+                            );
+                        })}
                         <p className={styles['modal-product__price']}>
                             <span className={styles['modal-product__price-sale']}>
-                                {modalContent?.price}
+                                {modalPrice} грн
                             </span>
                             <span className={styles['modal-product__price-main']}>
                                 <span>{modalContent?.sale}</span>
@@ -157,7 +194,10 @@ const Products: FC = () => {
                         <button
                             className={styles['modal-product__btn']}
                             onClick={() => {
-                                modalInModal(modalContent?.title);
+                                modalInModal(
+                                    modalContent?.title ? modalContent?.title : '',
+                                    modalContent?.category ? modalContent?.category : [],
+                                );
                             }}>
                             Заказать
                         </button>
@@ -166,7 +206,11 @@ const Products: FC = () => {
             )}
             {openPayModal && (
                 <Modal callBack={closeModal} small>
-                    <ModalBuy greetingUser={greetingUser} closeModal={closeModal} />
+                    <ModalBuy
+                        greetingUser={greetingUser}
+                        closeModal={closeModal}
+                        modalCategory={modalCategory}
+                    />
                 </Modal>
             )}
         </>
