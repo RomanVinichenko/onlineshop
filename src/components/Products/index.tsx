@@ -1,6 +1,6 @@
 import React, { FC, useState } from 'react';
 
-import mockData, { CategoryType } from '../../mockDataProduct';
+import mockData, { CategoryType, getImgUrl, getSvg } from '../../mockDataProduct';
 import Modal from '../Modal';
 import ModalBuy from '../ModalBuy';
 
@@ -110,11 +110,7 @@ const Products: FC = () => {
                             return (
                                 <li key={item.id} className={styles['products__item']}>
                                     <article className={'card'}>
-                                        <img
-                                            className={'card__img'}
-                                            src={`${process.env.PUBLIC_URL}/assets/images/${item.img}`}
-                                            alt=""
-                                        />
+                                        <img className={'card__img'} src={getSvg(item.id)} alt="" />
                                         <h2 className={'card__title'}>{item.title}</h2>
                                         <div className={'card__prices'}>
                                             <span className={'card__price'}>
@@ -170,6 +166,7 @@ const Products: FC = () => {
                         {modalContent?.category.map((item) => {
                             return (
                                 <button
+                                    key={item.id}
                                     className={`${styles['modal-product__type-btn']} ${
                                         item.count === modalPrice
                                             ? styles['modal-product__type-btn--active']
