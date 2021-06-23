@@ -1,4 +1,13 @@
 import { v1 } from 'uuid';
+import React from 'react';
+export const getImgUrl = (jpg: string) => require(`./images/${jpg}`);
+
+export const getSvg = (jpg: string) => {
+    return images[jpg];
+    // return React.lazy(() => {
+    //     return import(`./images/${jpg}`);
+    // });
+};
 
 export type MockDataProductType = {
     id: string;
@@ -1465,5 +1474,12 @@ let mockDataProduct: MockDataProductType[] = [
         sale: false,
     },
 ];
+
+export const images: any = {};
+
+mockDataProduct.forEach((p) => {
+    const img = require(`./images/${p.img}`);
+    images[p.id] = img.default;
+});
 
 export default mockDataProduct;

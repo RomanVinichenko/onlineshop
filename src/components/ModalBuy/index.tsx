@@ -15,6 +15,12 @@ const ModalBuy: FC<IModalBuyProps> = ({ greetingUser, closeModal, modalCategory 
     const [value, setValue] = useState('');
     const [textareaValue, setTextareaValue] = useState(greetingUser);
     const [buttonText, setButtonText] = useState('Отправить заявку');
+    const [modalPrice, setModalPrice] = useState<any>(modalCategory && modalCategory[0].count);
+
+    const modalPriceHandler = (count: number) => {
+        console.log(count);
+        setModalPrice(count);
+    };
 
     const textareaValueHandler = (e: ChangeEvent<HTMLTextAreaElement>) => {
         setTextareaValue(e.currentTarget.value);
@@ -80,7 +86,14 @@ const ModalBuy: FC<IModalBuyProps> = ({ greetingUser, closeModal, modalCategory 
                             name="category"
                             required>
                             {modalCategory.map((item) => {
-                                return <option value={item.descr}>{item.descr}</option>;
+                                return (
+                                    <option
+                                        key={item.id}
+                                        onClick={() => modalPriceHandler(item.count)}
+                                        value={item.descr}>
+                                        {item.descr}
+                                    </option>
+                                );
                             })}
                         </select>
                     </div>
@@ -88,7 +101,8 @@ const ModalBuy: FC<IModalBuyProps> = ({ greetingUser, closeModal, modalCategory 
                         <button
                             className={styles['contact-form__minus']}
                             onClick={() => countProductHandler('minus')}
-                            type={'button'}></button>
+                            type={'button'}
+                        />
                         <input
                             className={styles['contact-form__count']}
                             id="count"
@@ -99,8 +113,9 @@ const ModalBuy: FC<IModalBuyProps> = ({ greetingUser, closeModal, modalCategory 
                         <button
                             className={styles['contact-form__plus']}
                             onClick={() => countProductHandler('plus')}
-                            type={'button'}></button>
-                        <span className={styles['contact-form__price']}>300 грн</span>
+                            type={'button'}
+                        />
+                        <span className={styles['contact-form__price']}>{modalPrice} грн</span>
                     </div>
                 </>
             )}
