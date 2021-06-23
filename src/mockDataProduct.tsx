@@ -1475,11 +1475,17 @@ let mockDataProduct: MockDataProductType[] = [
     },
 ];
 
-export const images: any = {};
+type ImagesType = {
+    [key: string]: string;
+}
+
+export const images: ImagesType  = {};
 
 mockDataProduct.forEach((p) => {
     const img = require(`./images/${p.img}`);
     images[p.id] = img.default;
 });
+
+console.log(images);
 
 export default mockDataProduct;
