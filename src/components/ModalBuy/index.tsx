@@ -86,24 +86,21 @@ const ModalBuy: FC<IModalBuyProps> = ({ greetingUser, closeModal, modalCategory 
                     </div>
                     <div className={styles['contact-form__counter']}>
                         <button
-                            className={styles['contact-form__counter-btn']}
+                            className={styles['contact-form__minus']}
                             onClick={() => countProductHandler('minus')}
-                            type={'button'}>
-                            -
-                        </button>
+                            type={'button'}></button>
                         <input
-                            className={styles['contact-form__counter-input']}
+                            className={styles['contact-form__count']}
                             id="count"
                             name="count"
                             readOnly
                             value={countProduct}
                         />
                         <button
-                            className={styles['contact-form__counter-btn']}
+                            className={styles['contact-form__plus']}
                             onClick={() => countProductHandler('plus')}
-                            type={'button'}>
-                            +
-                        </button>
+                            type={'button'}></button>
+                        <span className={styles['contact-form__price']}>300 грн</span>
                     </div>
                 </>
             )}

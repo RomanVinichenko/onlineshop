@@ -9,7 +9,7 @@ import Feedback from '../Feedback';
 import Footer from '../Footer';
 
 import LazyLoad from 'react-lazyload';
-import {Link} from 'react-scroll';
+import { Link } from 'react-scroll';
 
 import styles from './style.module.scss';
 
@@ -84,7 +84,7 @@ const Main: FC = () => {
                         <div>
                             <img
                                 className={styles['main__pic']}
-                                src={process.env.PUBLIC_URL + '/assets/images/linens/31.jpg'}
+                                src={process.env.PUBLIC_URL + '/assets/images/top-img.jpg'}
                                 alt="Диван"
                             />
                         </div>
@@ -108,8 +108,7 @@ const Main: FC = () => {
 
             <Footer />
 
-          <Link className={styles['arrow']} to={'main'} smooth={true}
-          duration={1000}></Link>
+            <Link className={styles['arrow']} to={'main'} smooth={true} duration={1000}></Link>
         </>
     );
 };
