@@ -27,9 +27,20 @@ body {
 }
 
 .title {
+    position: relative;
     margin-bottom: 30px;
     font-size: 38px;
     text-align: center;
+
+    &::after {
+        content: "/";
+        position: absolute;
+        top: 5px;
+        margin-left: 20px;
+        font-size: 38px;
+        line-height: 1;
+        color: #ba4564;
+    }
 
     @include r($xl) {
         font-size: 30px;
