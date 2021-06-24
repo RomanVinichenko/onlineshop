@@ -40,6 +40,18 @@ body {
         font-size: 38px;
         line-height: 1;
         color: #ba4564;
+        animation-name: decor;
+        animation-duration: 2s;
+
+        @keyframes decor {
+            0% {
+                transform: rotate(180deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
     }
 
     @include r($xl) {

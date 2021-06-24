@@ -19,7 +19,9 @@ const ModalBuy: FC<IModalBuyProps> = ({ greetingUser, closeModal, modalCategory 
   const [categoryDefault, setCategoryDefault] = useState<any>(
     copyModalCategory && copyModalCategory[0],
   );
-  const [modalPrice, setModalPrice] = useState<number | undefined>(categoryDefault.count);
+  const [modalPrice, setModalPrice] = useState<number | undefined>(
+    categoryDefault && categoryDefault.count,
+  );
   let [countProduct, setCountProduct] = useState<number>(1);
 
   const modalPriceHandler = (countProduct: number) => {

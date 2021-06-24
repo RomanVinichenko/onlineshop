@@ -8,18 +8,20 @@ import About from '../About';
 import Feedback from '../Feedback';
 import Footer from '../Footer';
 
-import LazyLoad from 'react-lazyload';
 import { Link } from 'react-scroll';
 
 import styles from './style.module.scss';
+
+import topImg from '../../images/top-img.jpg';
+import cotton from '../../images/cotton.svg';
+import change from '../../images/change.svg';
+import gift from '../../images/gift.svg';
 
 const Main: FC = () => {
   let [openPayModal, setOpenPayModal] = useState<boolean>(false);
   return (
     <>
-      <LazyLoad>
-        <Header />
-      </LazyLoad>
+      <Header />
 
       <section className={styles['main']} id={'main'}>
         <div className={'container'}>
@@ -34,27 +36,15 @@ const Main: FC = () => {
               <div className={styles['main__decor']}>
                 <ul className={styles['main__list']}>
                   <li className={styles['main__list-item']}>
-                    <img
-                      className={styles['main__list-img']}
-                      src={process.env.PUBLIC_URL + '../assets/images/cotton.svg'}
-                      alt="картинка хлопок"
-                    />
+                    <img className={styles['main__list-img']} src={cotton} alt="картинка хлопок" />
                     <p className={styles['main__list-text']}>100%-й хлопок высокой плотности</p>
                   </li>
                   <li className={styles['main__list-item']}>
-                    <img
-                      className={styles['main__list-img']}
-                      src={process.env.PUBLIC_URL + '../assets/images/change.svg'}
-                      alt="картинка обмен"
-                    />
+                    <img className={styles['main__list-img']} src={change} alt="картинка обмен" />
                     <p className={styles['main__list-text']}>Возврат или обмен в течение 14 дней</p>
                   </li>
                   <li className={styles['main__list-item']}>
-                    <img
-                      className={styles['main__list-img']}
-                      src={process.env.PUBLIC_URL + '../assets/images/gift.svg'}
-                      alt="картинка подарок"
-                    />
+                    <img className={styles['main__list-img']} src={gift} alt="картинка подарок" />
                     <p className={styles['main__list-text']}>
                       При покупке постельного + полотенца, вы получаете 10% скидки на следующий
                       заказ
@@ -67,19 +57,13 @@ const Main: FC = () => {
               </button>
             </div>
             <div className={styles['main__image']}>
-              <img
-                className={styles['main__pic']}
-                src={process.env.PUBLIC_URL + '/assets/images/top-img.jpg'}
-                alt="Диван"
-              />
+              <img className={styles['main__pic']} src={topImg} alt="Диван" />
             </div>
           </div>
         </div>
       </section>
 
-      <LazyLoad height={800}>
-        <Products />
-      </LazyLoad>
+      <Products />
 
       <About />
 
