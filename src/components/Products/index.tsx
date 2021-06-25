@@ -14,6 +14,7 @@ type ModalContentType = {
   size: JSX.Element | string;
   sale: boolean;
   category: CategoryType[];
+  id: string;
 };
 
 const Products: FC = () => {
@@ -45,8 +46,9 @@ const Products: FC = () => {
     size: JSX.Element | string,
     sale: boolean,
     category: CategoryType[],
+    id: string,
   ) => {
-    setModalContent({ img, title, price, size, sale, category });
+    setModalContent({ img, title, price, size, sale, category, id });
     setModalPrice(sale ? price * 0.75 : price);
   };
 
@@ -125,6 +127,7 @@ const Products: FC = () => {
                             item.description,
                             item.sale,
                             item.category,
+                            item.id,
                           )
                         }>
                         Подробнее
@@ -145,7 +148,7 @@ const Products: FC = () => {
       {modalContent && (
         <Modal callBack={() => setModalContent(null)}>
           <div className={styles['modal-product__img']}>
-            <img src={`${process.env.PUBLIC_URL}/assets/images/${modalContent?.img}`} alt="" />
+            <img src={getSvg(modalContent.id)} alt="" />
           </div>
           <div className={styles['modal-product__info']}>
             <h2 className={styles['modal-product__title']}>{modalContent?.title}</h2>
