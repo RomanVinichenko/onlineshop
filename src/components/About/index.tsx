@@ -11,7 +11,7 @@ const About: FC = () => {
           <ul className={styles['about__items']}>
             <li className={`${styles['about__item']} ${styles['about__item--delivery']}`}>
               <p className={styles['about__text']}>
-                Доставка осуществляется курьерской службой "Нова Потча" наложенным платежом или по
+                Доставка осуществляется курьерской службой "Новая Почта" наложенным платежом или по
                 полной предоплате на банковскую карту.
               </p>
             </li>
