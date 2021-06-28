@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 
 import Header from '../Header';
 import Products from '../Products';
@@ -19,6 +19,39 @@ import gift from '../../images/gift.svg';
 
 const Main: FC = () => {
   let [openPayModal, setOpenPayModal] = useState<boolean>(false);
+
+  function getZero(num: number) {
+    if (num >= 0 && num < 10) {
+      return '0' + num;
+    }
+    return num;
+  }
+
+  const [counter, setCounter] = useState<number>(86400000);
+
+  const counterHandler = () => {
+    let getValueTime = localStorage.getItem('time');
+    if (getValueTime) {
+      setCounter(Number(JSON.parse(getValueTime)) - 100);
+    }
+  };
+
+  let seconds = getZero(Math.floor((counter / 1000) % 60));
+  let minutes = getZero(Math.floor((counter / 1000 / 60) % 60));
+  let hours = getZero(Math.floor((counter / (1000 * 60 * 60)) % 24));
+
+  useEffect(() => {
+    let getValueTime = localStorage.getItem('time');
+    if (getValueTime) {
+      setCounter(JSON.parse(getValueTime));
+    }
+  }, []);
+
+  useEffect(() => {
+    counter > 0 && setTimeout(counterHandler, 200);
+    localStorage.setItem('time', JSON.stringify(counter));
+  }, [counter]);
+
   return (
     <>
       <Header />
@@ -29,7 +62,15 @@ const Main: FC = () => {
             <div className={styles['main__description']}>
               <h1 className={styles['main__title']}>
                 СКИДКА НА ВЫБРАННЫЕ ТОВАРЫ ДО <span>50%!</span> Успей заказать, осталось всего:
+                <div>
+                  {
+                    <span>
+                      {hours} : {minutes} : {seconds}
+                    </span>
+                  }
+                </div>
               </h1>
+
               <p className={styles['main__subtitle']}>
                 Бесплатная доставка при заказе от 4-ех единиц товаров!
               </p>
