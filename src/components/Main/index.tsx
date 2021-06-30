@@ -48,7 +48,7 @@ const Main: FC = () => {
   }, []);
 
   useEffect(() => {
-    counter > 0 && setTimeout(counterHandler, 200);
+    counter > 0 && setTimeout(counterHandler, 100);
     localStorage.setItem('time', JSON.stringify(counter));
   }, [counter]);
 
