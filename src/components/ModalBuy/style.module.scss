@@ -51,25 +51,19 @@
     }
 
     &__button {
-        width: 50px;
-        border: none;
-        background: transparent;
-    }
-
-    &__minus {
         width: 20px;
         height: 20px;
         border: none;
-        background: transparent;
-        background-image: url("../../images/minus.svg");
-    }
+        background-repeat: no-repeat;
+        background-color: transparent;
 
-    &__plus {
-        width: 20px;
-        height: 20px;
-        border: none;
-        background: transparent;
-        background-image: url("../../images/plus.svg");
+        &--minus {
+            background-image: url("../../images/minus.svg");
+        }
+
+        &--plus {
+            background-image: url("../../images/plus.svg");
+        }
     }
 
     &__price {

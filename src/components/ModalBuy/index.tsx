@@ -113,7 +113,7 @@ const ModalBuy: FC<IModalBuyProps> = ({ greetingUser, closeModal, modalCategory 
           </div>
           <div className={styles['contact-form__counter']}>
             <button
-              className={styles['contact-form__minus']}
+              className={`${styles['contact-form__button']} ${styles['contact-form__button--minus']}`}
               onClick={() => countProductHandler('minus')}
               type={'button'}
             />
@@ -125,7 +125,7 @@ const ModalBuy: FC<IModalBuyProps> = ({ greetingUser, closeModal, modalCategory 
               value={countProduct}
             />
             <button
-              className={styles['contact-form__plus']}
+              className={`${styles['contact-form__button']} ${styles['contact-form__button--plus']}`}
               onClick={() => countProductHandler('plus')}
               type={'button'}
             />
@@ -133,6 +133,13 @@ const ModalBuy: FC<IModalBuyProps> = ({ greetingUser, closeModal, modalCategory 
           </div>
         </>
       )}
+      <input
+        type="text"
+        id="totalPrice"
+        name="totalPrice"
+        value={modalPrice}
+        style={{ display: 'none' }}
+      />
       <textarea
         className={styles['contact-form__text']}
         placeholder="Введите ваше сообщение"
