@@ -37,11 +37,13 @@
         background-color: rgba(#fff5f6, 0.6);
 
         &--sm {
-            max-width: 500px;
+            padding: 45px 15px 15px;
+            max-width: 550px;
         }
 
         @include r($md) {
             flex-direction: column;
+            max-width: 500px;
         }
     }
 

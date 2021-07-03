@@ -3,3 +3,10 @@
         @content;
     }
 }
+
+@mixin text-clamp {
+    display: box;
+    overflow: hidden;
+    box-orient: vertical;
+    -webkit-line-clamp: 3;
+}

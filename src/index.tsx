@@ -5,9 +5,4 @@ import Main from './components/Main';
 
 import './ui/index.scss';
 
-ReactDOM.render(
-    <React.StrictMode>
-        <Main />
-    </React.StrictMode>,
-    document.getElementById('root'),
-);
+ReactDOM.render(<Main />, document.getElementById('root'));

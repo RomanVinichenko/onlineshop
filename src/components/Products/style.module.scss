@@ -2,7 +2,7 @@
 @import "../../ui/variables";
 
 .products {
-    padding: 100px 0;
+    padding: 70px 0;
 
     &__list {
         display: flex;
@@ -14,32 +14,18 @@
         }
     }
 
-    &__title {
-        margin-bottom: 20px;
-        font-size: 38px;
-        text-align: center;
-
-        @include r($md) {
-            font-size: 30px;
-        }
-
-        @include r($sm) {
-            font-size: 26px;
-        }
-    }
-
-    &__item {
+    &__list-item {
         &:not(:last-child) {
             margin-right: 10px;
         }
     }
 
-    &__button {
+    &__list-button {
         padding: 10px 20px;
         border: 1px solid #7a2041;
         border-radius: 35px;
         background-color: transparent;
-        transition: all 0.3s;
+        transition: color 0.5s, background-color 0.5s;
 
         &:not(:last-child) {
             margin-right: 10px;
@@ -50,52 +36,107 @@
             background-color: #7a2041;
         }
 
+        &--active {
+            color: #fff;
+            background-color: #7a2041;
+        }
+
         @include r($sm) {
             margin-bottom: 10px;
             padding: 6px 8px;
         }
     }
 
-    &__inner {
+    &__items {
         display: flex;
         flex-wrap: wrap;
-        margin: 0 -10px 0;
-        text-align: center;
+        margin: 0 -5px;
         overflow-x: hidden;
+        text-align: center;
     }
 
-    &__card {
-        width: calc(100% / 4 - 20px);
-        margin: 0 10px 20px;
+    &__item {
+        margin: 0 5px 20px;
+        width: calc(100% / 4 - 10px);
+
+        @include r($lg) {
+            width: calc(100% / 3 - 10px);
+        }
+
+        @include r($md) {
+            width: calc(100% / 2 - 10px);
+        }
+
+        @include r($sm) {
+            width: 100%;
+        }
     }
 }
 
 .modal-product {
-    &__img {
-        margin-bottom: 15px;
-    }
-
     &__title {
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         font-weight: 700;
         font-size: 28px;
 
-        @include r($md) {
+        @include r($lg) {
             font-size: 22px;
+        }
+
+        @include r($sm) {
+            font-size: 20px;
+        }
+    }
+
+    &__img {
+        img {
+            @include r($md) {
+                width: 100%;
+            }
+        }
+
+        @include r($md) {
+            margin-bottom: 15px;
         }
     }
 
     &__info {
-        padding: 0 50px;
+        padding: 0 0 0 50px;
+        width: 100%;
 
-        @include r($sm) {
+        @include r($md) {
             padding: 0;
+        }
+    }
+
+    &__type-btn {
+        margin-right: 5px;
+        margin-bottom: 15px;
+        padding: 5px;
+        border: 1px solid #ba4564;
+        font-size: 14px;
+        background-color: #fff;
+        transition: color 0.3s, background-color 0.5s;
+
+        &--active {
+            font-size: 18px;
+            color: #fff;
+            background-color: #7a2041;
+
+            @include r($md) {
+                font-size: 16px;
+            }
+        }
+
+        @include r($md) {
+            margin-bottom: 10px;
+            padding: 3px;
         }
     }
 
     &__price {
         display: flex;
-        margin-bottom: 25px;
+        margin-bottom: 15px;
         font-size: 18px;
     }
 
@@ -114,8 +155,7 @@
     }
 
     &__description {
-        margin-bottom: 30px;
-        font-size: 14px;
+        margin-bottom: 15px;
     }
 
     &__btn {
@@ -131,5 +171,10 @@
         &:hover {
             box-shadow: none;
         }
+    }
+
+    &__star {
+        display: inline-block;
+        width: 200px;
     }
 }

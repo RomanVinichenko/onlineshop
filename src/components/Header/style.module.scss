@@ -16,16 +16,29 @@
         display: flex;
         align-items: center;
         margin-right: auto;
+        cursor: pointer;
     }
 
     &__img {
         margin-right: 12px;
+        width: 54px;
+        height: 54px;
+
+        @include r($sm) {
+            margin-right: 4px;
+            width: 44px;
+            height: 44px;
+        }
     }
 
     &__title {
-        @include r($sm) {
-            max-width: 60px;
+        @include r($md) {
+            max-width: 75px;
             font-size: 18px;
+        }
+
+        @include r($sm) {
+            font-size: 16px;
         }
     }
 
@@ -48,6 +61,12 @@
                     margin-right: 20px;
                 }
             }
+
+            @include r($sm) {
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
+            }
         }
 
         &__btn {
@@ -57,13 +76,14 @@
             font-size: 18px;
             background-color: transparent;
             transition: border-bottom 0.3s;
+            cursor: pointer;
 
             &:hover {
                 border-bottom: 1px solid;
             }
 
             @include r($sm) {
-                font-size: 16px;
+                font-size: 15px;
             }
         }
     }

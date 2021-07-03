@@ -1,165 +1,209 @@
 import React, { FC, useState } from 'react';
 
-import mockData from '../../mockDataProduct';
+import mockData, { CategoryType, getSvg } from '../../mockDataProduct';
 import Modal from '../Modal';
 import ModalBuy from '../ModalBuy';
 
 import styles from './style.module.scss';
+import { Player } from '@lottiefiles/react-lottie-player';
 
 type ModalContentType = {
-    img: string;
-    title: string;
-    price: string;
-    size: JSX.Element | string;
-    newPrice: string;
+  img: string;
+  title: string;
+  price: number;
+  size: JSX.Element | string;
+  sale: boolean;
+  category: CategoryType[];
+  id: string;
 };
 
 const Products: FC = () => {
-    let [modalContent, setModalContent] = useState<ModalContentType | null>(null);
-    let [productList, setProductList] = useState(mockData);
-    let [filter, setFilter] = useState<'all' | 'towel' | 'linens'>('all');
-    let [openPayModal, setOpenPayModal] = useState<boolean>(false);
-    let [greetingUser, setGreetingUser] = useState('Здравствуйте! Хотел бы заказать ');
+  let [modalContent, setModalContent] = useState<ModalContentType | null>(null);
+  let [productList, setProductList] = useState(mockData);
+  let [filter, setFilter] = useState<'all' | 'towel' | 'linens'>('all');
+  let [openPayModal, setOpenPayModal] = useState<boolean>(false);
+  let [greetingUser, setGreetingUser] = useState('Здравствуйте! Хотел бы заказать ');
+  let [modalPrice, setModalPrice] = useState<number>(0);
+  let [modalCategory, setModalCategory] = useState<CategoryType[]>([]);
 
-    let copyProductList = productList;
+  let copyProductList = productList;
 
-    if (filter === 'towel') {
-        copyProductList = productList.filter((item) => item.type === 'towel');
-    }
-    if (filter === 'linens') {
-        copyProductList = productList.filter((item) => item.type === 'linens');
-    }
+  if (filter === 'towel') {
+    copyProductList = productList.filter((item) => item.type === 'towel');
+  }
+  if (filter === 'linens') {
+    copyProductList = productList.filter((item) => item.type === 'linens');
+  }
 
-    const modalOpenHandler = (
-        img: string,
-        title: string,
-        price: string,
-        size: JSX.Element | string,
-        newPrice: string,
-    ) => {
-        setModalContent({ img, title, price, size, newPrice });
-    };
+  const modalPriceHandler = (money: number) => {
+    setModalPrice(money);
+  };
 
-    const modalInModal = (name: string | undefined) => {
-        setModalContent(null);
-        setOpenPayModal(true);
-        setGreetingUser(`Здравствуйте! Хотел бы заказать ${name}`);
-    };
+  const modalOpenHandler = (
+    img: string,
+    title: string,
+    price: number,
+    size: JSX.Element | string,
+    sale: boolean,
+    category: CategoryType[],
+    id: string,
+  ) => {
+    setModalContent({ img, title, price, size, sale, category, id });
+    setModalPrice(sale ? price * 0.75 : price);
+  };
 
-    const infoProductForm = (name: string) => {
-        setOpenPayModal(true);
-        setGreetingUser(`Здравствуйте! Хотел бы заказать ${name}`);
-    };
+  const modalInModal = (title: string, category: CategoryType[]) => {
+    setModalContent(null);
+    setOpenPayModal(true);
+    setGreetingUser(`Здравствуйте! Хотел бы заказать ${title}`);
+    setModalCategory(category);
+  };
 
-    return (
-        <>
-            <section className={styles['products']} id={'products'}>
-                <div className={'container'}>
-                    <h2 className={styles['products__title']}>Каталог</h2>
+  const infoProductForm = (title: string, category: CategoryType[]) => {
+    setOpenPayModal(true);
+    setGreetingUser(`Здравствуйте! Хотел бы заказать ${title}`);
+    setModalCategory(category);
+  };
 
-                    <ul className={styles['products__list']}>
-                        <li className={styles['products__item']}>
-                            <button
-                                className={styles['products__button']}
-                                onClick={() => setFilter('all')}>
-                                Все товары
-                            </button>
-                        </li>
-                        <li className={styles['products__item']}>
-                            <button
-                                className={styles['products__button']}
-                                onClick={() => setFilter('towel')}>
-                                Полотенца
-                            </button>
-                        </li>
-                        <li className={styles['products__item']}>
-                            <button
-                                className={styles['products__button']}
-                                onClick={() => setFilter('linens')}>
-                                Постельное белье
-                            </button>
-                        </li>
-                    </ul>
-                    <ul className={styles['products__inner']}>
-                        {copyProductList.map((item) => {
-                            return (
-                                <li className={styles['products__card']}>
-                                    <article key={item.id} className={'card'}>
-                                        <img
-                                            className={'card__img'}
-                                            src={`${process.env.PUBLIC_URL}/assets/images/${item.img}`}
-                                            alt=""
-                                        />
-                                        <h2 className={'card__title'}>{item.title}</h2>
-                                        <div className={'card__prices'}>
-                                            <span className={'card__price'}>{item.price}</span>
-                                            <span className={'card__oldprice'}>{item.price}</span>
-                                        </div>
-                                        <div className={'buttons'}>
-                                            <button
-                                                className={'card__btn-more'}
-                                                onClick={() =>
-                                                    modalOpenHandler(
-                                                        item.img,
-                                                        item.title,
-                                                        item.price,
-                                                        item.description.text,
-                                                        item.newPrice,
-                                                    )
-                                                }>
-                                                Подробнее
-                                            </button>
-                                            <button
-                                                className={'card__btn-buy'}
-                                                onClick={() => infoProductForm(item.title)}>
-                                                Купить
-                                            </button>
-                                        </div>
-                                    </article>
-                                </li>
-                            );
-                        })}
-                    </ul>
-                </div>
-            </section>
-            {modalContent && (
-                <Modal callBack={() => setModalContent(null)}>
-                    <div className={styles['modal-product__img']}>
-                        <img
-                            src={`${process.env.PUBLIC_URL}/assets/images/${modalContent?.img}`}
-                            alt=""
-                        />
+  const closeModal = () => {
+    setOpenPayModal(false);
+  };
+
+  return (
+    <>
+      <section className={styles['products']} id={'products'}>
+        <div className={'container'}>
+          <h2 className={'title'}>Каталог</h2>
+
+          <ul className={styles['products__list']}>
+            <li className={styles['products__list-item']}>
+              <button
+                className={`${styles['products__list-button']} ${
+                  filter === 'all' ? styles['products__list-button--active'] : ''
+                }`}
+                onClick={() => setFilter('all')}>
+                Все товары
+              </button>
+            </li>
+            <li className={styles['products__list-item']}>
+              <button
+                className={`${styles['products__list-button']} ${
+                  filter === 'towel' ? styles['products__list-button--active'] : ''
+                }`}
+                onClick={() => setFilter('towel')}>
+                Полотенца
+              </button>
+            </li>
+            <li className={styles['products__list-item']}>
+              <button
+                className={`${styles['products__list-button']} ${
+                  filter === 'linens' ? styles['products__list-button--active'] : ''
+                }`}
+                onClick={() => setFilter('linens')}>
+                Постельное белье
+              </button>
+            </li>
+          </ul>
+          <ul className={styles['products__items']}>
+            {copyProductList.map((item) => {
+              return (
+                <li key={item.id} className={styles['products__item']}>
+                  <article className={'card'}>
+                    <img className={'card__img'} src={getSvg(item.id)} alt="" />
+                    <h2 className={'card__title'}>{item.title}</h2>
+                    <div className={'card__prices'}>
+                      <span className={'card__price'}>{item.category[0].count} грн</span>
+
+                      {item.sale && <span className={'card__oldprice'}>{item.price} грн</span>}
                     </div>
-                    <div className={styles['modal-product__info']}>
-                        <p className={styles['modal-product__title']}>{modalContent?.title}</p>
-                        <p className={styles['modal-product__price']}>
-                            <span className={styles['modal-product__price-sale']}>
-                                {modalContent?.price}
-                            </span>
-                            <span className={styles['modal-product__price-main']}>
-                                <span>{modalContent?.newPrice}</span>
-                            </span>
-                        </p>
-                        <div className={styles['modal-product__description']}>
-                            {modalContent?.size}
-                        </div>
-                        <button
-                            className={styles['modal-product__btn']}
-                            onClick={() => {
-                                modalInModal(modalContent?.title);
-                            }}>
-                            Заказать
-                        </button>
+                    <div className={'buttons'}>
+                      <button
+                        className={'card__btn-more'}
+                        onClick={() =>
+                          modalOpenHandler(
+                            item.img,
+                            item.title,
+                            item.price,
+                            item.description,
+                            item.sale,
+                            item.category,
+                            item.id,
+                          )
+                        }>
+                        Подробнее
+                      </button>
+                      <button
+                        className={'card__btn-buy'}
+                        onClick={() => infoProductForm(item.title, item.category)}>
+                        Купить
+                      </button>
                     </div>
-                </Modal>
+                  </article>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </section>
+      {modalContent && (
+        <Modal callBack={() => setModalContent(null)}>
+          <div className={styles['modal-product__img']}>
+            <img src={getSvg(modalContent.id)} alt="" />
+          </div>
+          <div className={styles['modal-product__info']}>
+            <h2 className={styles['modal-product__title']}>{modalContent?.title}</h2>
+            {modalContent?.category.map((item) => {
+              return (
+                <button
+                  key={item.id}
+                  className={`${styles['modal-product__type-btn']} ${
+                    item.count === modalPrice ? styles['modal-product__type-btn--active'] : ''
+                  }`}
+                  onClick={() => modalPriceHandler(item.count)}>
+                  {item.descr}
+                </button>
+              );
+            })}
+
+            {modalContent.sale && (
+              <Player
+                autoplay
+                loop
+                className={styles['modal-product__star']}
+                src="https://assets6.lottiefiles.com/packages/lf20_AdKXsL.json"
+              />
             )}
-            {openPayModal && (
-                <Modal callBack={() => setOpenPayModal(false)} small>
-                    <ModalBuy greetingUser={greetingUser} />
-                </Modal>
-            )}
-        </>
-    );
+            <p className={styles['modal-product__price']}>
+              <span className={styles['modal-product__price-sale']}>{modalPrice} грн</span>
+              <span className={styles['modal-product__price-main']}>
+                <span>{modalContent?.sale}</span>
+              </span>
+            </p>
+            <div className={styles['modal-product__description']}>{modalContent?.size}</div>
+            <button
+              className={styles['modal-product__btn']}
+              onClick={() => {
+                modalInModal(
+                  modalContent?.title ? modalContent?.title : '',
+                  modalContent?.category ? modalContent?.category : [],
+                );
+              }}>
+              Заказать
+            </button>
+          </div>
+        </Modal>
+      )}
+      {openPayModal && (
+        <Modal callBack={closeModal} small>
+          <ModalBuy
+            greetingUser={greetingUser}
+            closeModal={closeModal}
+            modalCategory={modalCategory}
+          />
+        </Modal>
+      )}
+    </>
+  );
 };
 
 export default Products;
